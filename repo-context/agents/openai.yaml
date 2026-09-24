@@ -1,0 +1,6 @@
+interface:
+  display_name: "Repository Context"
+  short_description: "Use compact repo notes and check stale evidence"
+  default_prompt: "Use $repo-context to find the relevant project context, verify current source, and update only the notes affected by this task."
+policy:
+  allow_implicit_invocation: true

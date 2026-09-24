@@ -1,0 +1,4 @@
+interface:
+  display_name: "Payload CMS"
+  short_description: "Version-aware, secure Payload CMS guidance"
+  default_prompt: "Use $payload to implement this Payload CMS change safely."
