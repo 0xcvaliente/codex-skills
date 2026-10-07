@@ -1,0 +1,4 @@
+interface:
+  display_name: "Strix Codex"
+  short_description: "Prove security findings, fix them, and track Strix"
+  default_prompt: "Use $strix-codex to assess this project, validate findings, and verify any requested fixes."

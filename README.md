@@ -4,7 +4,7 @@
 
 This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create explanatory diagrams and 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
 
-The collection currently contains **26 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
+The collection currently contains **27 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
 ## What this repository provides
 
@@ -87,6 +87,9 @@ The default workflow is Blender Python → GLB → target-runtime verification. 
 |---|---|---|
 | [Security Best Practices](security-best-practices/README.md) | Applies Python, JavaScript/TypeScript, and Go guidance during explicitly requested security work. | Secure coding guidance or a prioritized report with code locations. |
 | [Security Threat Model](security-threat-model/README.md) | Maps assets, boundaries, attacker capabilities, and abuse paths from repository evidence. | A scoped model with calibrated priorities and specific mitigations. |
+| [Strix Codex](strix-codex/README.md) | Adapts Strix's source-aware pentesting, evidence review, remediation, and optional CLI/cloud/CI workflows to native Codex tools. Checks usestrix/strix for upstream changes when invoked. | Validated or explicitly source-supported findings, coverage gaps, verified fixes, and upstream freshness results. |
+
+Strix Codex consolidates nine upstream workflow areas into one skill. Its read-only Python checker compares the reviewed revision and complete file inventory against the current default branch of [usestrix/strix](https://github.com/usestrix/strix), including newly added skills and knowledge packs. It reports pending changes without executing fetched code or automatically replacing instructions. Native testing does not require the separate Strix runtime; actual Strix CLI/cloud execution is optional and has its own requirements. See the [package guide](strix-codex/README.md) and [maintenance procedure](strix-codex/references/upstream-maintenance.md).
 
 ### CMS development
 
@@ -193,6 +196,9 @@ export a GLB, and verify it in an interactive web viewer.
 
 $diagram-craft explain this request and queue flow as an editable SVG/HTML,
 showing source evidence and marking unknown behavior.
+
+$strix-codex assess this API using local seeded tenants, report proof and
+coverage gaps, and verify the requested fixes.
 ```
 
 Normal selection depends on a skill's description and invocation policy. Explicit invocation makes the intended workflow clear, but does not configure missing tools or authorize unrelated actions.
@@ -226,6 +232,7 @@ There is no single application build or universal test command for this collecti
 | Figma work | An accessible Figma MCP connection and the target design. |
 | GSAP, React, Next.js, or Payload implementation | The target app's installed libraries, configuration, and validation workflow. |
 | Snapshot skill validation | Python and PyYAML for the bundled structural validator. |
+| Strix Codex freshness checks and helper tests | Python 3.9+ standard library; public GitHub API access for live checks. Native testing uses the target project's tools; optional Strix execution needs its separate runtime/service and authorized spend. |
 
 Tests check helper behavior; evaluation scenarios are maintenance rubrics for skill routing and decisions. Neither automatically validates every real-world task.
 
@@ -253,10 +260,12 @@ git -C codex-skills pull --ff-only
 
 Installed copies do not update automatically when the clone changes. Compare them before replacement and preserve local modifications. Keep project-specific architecture, design, and business records in their project rather than in a globally installed reusable skill.
 
+Strix Codex additionally checks [usestrix/strix](https://github.com/usestrix/strix) as its upstream source of truth each time the skill is invoked. Checks report `current`, `updates_available`, or `unknown`; they do not schedule background work, overwrite the installed package, or advance its reviewed baseline. Use its [maintenance procedure](strix-codex/references/upstream-maintenance.md) to review and incorporate upstream changes before publishing and synchronizing the adaptation.
+
 When adding or changing a package, keep its description precise, preserve user scope, link deeper guidance where relevant, and update its README and this catalog. Add scripts for reliable reusable mechanics. Record only checks actually performed and distinguish missing verification from a pass.
 
 ## Licensing and provenance
 
 Licensing is recorded within individual packages; this repository has no single root license file establishing one license for the entire collection. Some packages retain license texts, some declare terms in frontmatter, and others document sources in the entrypoint. Check relevant material before reuse or redistribution rather than assuming a uniform license.
 
-Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
+Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
