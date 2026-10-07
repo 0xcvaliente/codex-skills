@@ -1,0 +1,4 @@
+interface:
+  display_name: "Founder Codex"
+  short_description: "Validate, build, grow, and operate your business"
+  default_prompt: "Use $founder-codex to assess my business, identify its main constraint, and complete the most useful next deliverable."
