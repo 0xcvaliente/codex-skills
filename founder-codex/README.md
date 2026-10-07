@@ -194,7 +194,7 @@ Save this hypothetical input as `numbers.json` in your project:
 }
 ```
 
-From the repository root, run:
+From this skill's directory (`founder-codex/` inside the collection), run:
 
 ```bash
 python3 scripts/finance.py /path/to/numbers.json
@@ -225,13 +225,21 @@ Start with [SKILL.md](SKILL.md) to see the instructions Codex follows. Reference
 
 The skill passed structural validation, **11 finance tests**, and **one independent founder-request evaluation**. The evaluation used a hypothetical company scenario to check constraint diagnosis, conflicting metrics, rejection of simulated purchase rates as demand evidence, financial calculations, and preparation of a useful experiment.
 
-Run the finance tests from the repository root:
+Run the finance tests from this skill's directory:
 
 ```bash
 python3 -m unittest discover -s tests -v
 ```
 
 These checks establish the documented structure and tested behavior, not coverage of every business situation. After changing the finance schema or arithmetic, rerun the tests; after substantial workflow changes, evaluate a realistic founder request.
+
+From the collection root, the equivalent test command is `python3 -m unittest discover -s founder-codex/tests -v`; the helper path is `founder-codex/scripts/finance.py`.
+
+## Relationship to the collection
+
+Founder Codex owns the business question, evidence, and consistency across decisions. Specialist skills can implement a resulting interface with [UI Design](../ui-design/README.md), shape a complete website experience with [Web Experience Design](../web-experience-design/README.md), or work on application structure with [Codebase Design](../codebase-design/README.md). A document-formatting or platform-specific task may need capabilities supplied by the active environment.
+
+These are task-dependent handoffs rather than a requirement to install every skill. A small copy request can remain within Founder Codex, while a product brief can become the input to an authorized implementation. See the [collection README](../README.md) for the full catalog and dependency overview.
 
 ## Inspiration and attribution
 
