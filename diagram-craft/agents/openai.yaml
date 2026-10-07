@@ -1,0 +1,4 @@
+interface:
+  display_name: "Diagram Craft"
+  short_description: "Clear diagrams with editable sources and layout checks"
+  default_prompt: "Use $diagram-craft to create an accurate, polished diagram from this material and verify the rendered result."

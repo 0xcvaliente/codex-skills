@@ -1,0 +1,11 @@
+# Provenance
+
+Diagram Craft is original Codex skill content and code by 0xcvaliente, inspired by the problem addressed by [cathrynlavery/diagram-design](https://github.com/cathrynlavery/diagram-design).
+
+Inspected on 2026-10-07 at revision [`d1376371965f513d99cc9ec388835d255c5c88d5`](https://github.com/cathrynlavery/diagram-design/tree/d1376371965f513d99cc9ec388835d255c5c88d5). The reference's MIT license names Cathryn Lavery, copyright 2025.
+
+The reference demonstrates the value of editorial layout, HTML/SVG output, semantic notation, and rendered checks. This package does not copy its instruction text, scripts, templates, fonts, artwork, or gallery. The schema, renderer, inspector, tests, scenes, and documentation were authored for this package.
+
+Our emphasis is a concise Codex entrypoint, entity/edge evidence status, flexible styling, optional tooling, and explicit verification limits. We do not claim universal superiority or the reference's full gallery/import coverage. Automatic discovery is enabled; routine work has no first-use brand gate.
+
+The package MIT license covers its original files only, not neighboring skills or user materials.

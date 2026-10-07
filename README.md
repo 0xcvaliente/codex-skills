@@ -2,9 +2,9 @@
 
 **Reusable instruction packages for building software, designing interfaces, working with business evidence, and producing specialized creative artifacts with Codex.**
 
-This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
+This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create explanatory diagrams and 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
 
-The collection currently contains **25 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
+The collection currently contains **26 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
 ## What this repository provides
 
@@ -56,6 +56,14 @@ Install the packages relevant to your work. Several skills cover neighboring con
 | [GSAP React](gsap-react/README.md) | Handles React refs, scoped selectors, `useGSAP`, contexts, and lifecycle cleanup. | Component-owned GSAP integration. |
 | [GSAP ScrollTrigger](gsap-scrolltrigger/README.md) | Configures reveals, scrub, pinning, custom scrollers, refresh, and scroll-driven timelines. | Scroll interactions with deliberate geometry and teardown. |
 | [GSAP Timeline](gsap-timeline/README.md) | Coordinates steps through labels, positions, defaults, nesting, and playback. | Maintainable, controllable sequences. |
+
+### Diagrams and explanatory visuals
+
+| Skill | What it does | Typical result |
+|---|---|---|
+| [Diagram Craft](diagram-craft/README.md) | Creates and refines diagrams with explicit semantics, evidence status, adaptable styling, and rendered checks. | Editable SVG/HTML or Mermaid, source/evidence records, and a verification receipt. |
+
+Diagram Craft includes an offline positioned-scene renderer, geometry and contrast checks, optional Playwright measurements and PNG/PDF exports, and editable light/dark examples. Specialized sequence, ER, and UML notation is authored with the appropriate tools; the helper does not replace those notations or provide universal import parsing.
 
 ### 3D assets and web viewers
 
@@ -182,6 +190,9 @@ $founder-codex compare these pricing packages using our costs and customer evide
 
 $create-3d-assets create a stylized robot with editable Blender source,
 export a GLB, and verify it in an interactive web viewer.
+
+$diagram-craft explain this request and queue flow as an editable SVG/HTML,
+showing source evidence and marking unknown behavior.
 ```
 
 Normal selection depends on a skill's description and invocation policy. Explicit invocation makes the intended workflow clear, but does not configure missing tools or authorize unrelated actions.
@@ -193,6 +204,7 @@ Useful combinations include:
 - **Implement from Figma:** the Figma packages retrieve the exact design and fit it to project conventions, with rules recorded for repeated work if requested.
 - **Engineer motion:** Animate or UI Animation establishes purpose and behavior; GSAP packages supply library patterns; Review Animations critiques the result.
 - **Build a 3D web experience:** Create 3D Assets produces and checks the mesh; Web Experience Design integrates its presentation; UI Verification exercises the surrounding interface.
+- **Explain a system:** Repo Context locates source evidence; Diagram Craft models and renders the relationships with explicit assumptions and editable outputs.
 - **Connect business and delivery:** Founder Codex grounds the decision and deliverable; a specialist skill handles the requested implementation or artifact format.
 
 Some entrypoints mention companion skills **not included** here, such as `product-design`, `typography-audit`, `ax-audit`, `animate-text`, or additional GSAP packages. Those mentions are routing guidance, not bundled dependencies. Consult each README and use the tools actually available in the session.
@@ -205,6 +217,7 @@ There is no single application build or universal test command for this collecti
 |---|---|
 | Repository mapping | Git and Python 3.9+ for the Repo Context helper. |
 | Offline founder calculations | Python 3.8+; the finance helper uses the standard library. |
+| Diagram scene rendering and SVG extraction | Python 3.9+ standard library; browser measurement and PNG/PDF export optionally use Playwright plus Chromium. |
 | Recorded motion analysis | ffmpeg; OpenCV, NumPy, and SciPy for tracking and fitting. |
 | 3D asset authoring | Installed Blender for Blender workflows; a configured renderer for procedural web geometry. The inventory helper uses Python 3.9+ and the standard library. |
 | 3D delivery and optional generation | A target engine or web viewer; optional glTF Transform/Khronos validation. AI services or Blender bridges must actually be available, with service access and authorized spend where applicable. |
@@ -246,4 +259,4 @@ When adding or changing a package, keep its description precise, preserve user s
 
 Licensing is recorded within individual packages; this repository has no single root license file establishing one license for the entire collection. Some packages retain license texts, some declare terms in frontmatter, and others document sources in the entrypoint. Check relevant material before reuse or redistribution rather than assuming a uniform license.
 
-Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
+Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
