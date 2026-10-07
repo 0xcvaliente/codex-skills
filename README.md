@@ -2,9 +2,9 @@
 
 **Reusable instruction packages for building software, designing interfaces, working with business evidence, and producing specialized creative artifacts with Codex.**
 
-This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, review security, work with Payload CMS, support a founder, or package an animated pet.
+This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
 
-The collection currently contains **24 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
+The collection currently contains **25 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
 ## What this repository provides
 
@@ -18,6 +18,7 @@ Cloning the repository gives you the instruction packages and their resources. I
 
 - Developers working on architecture, React or Next.js applications, CMS integration, and focused security work.
 - Designers and design engineers translating visual intent into production interfaces, motion, and browser-verified behavior.
+- Game developers and creators producing editable 3D props, figures, characters, and interactive online model previews.
 - Founders connecting product, positioning, pricing, marketing, sales, finance, and operations through shared company context.
 - People creating specialized assets such as animated pets, or studying how reusable skills and plugins are structured.
 
@@ -55,6 +56,14 @@ Install the packages relevant to your work. Several skills cover neighboring con
 | [GSAP React](gsap-react/README.md) | Handles React refs, scoped selectors, `useGSAP`, contexts, and lifecycle cleanup. | Component-owned GSAP integration. |
 | [GSAP ScrollTrigger](gsap-scrolltrigger/README.md) | Configures reveals, scrub, pinning, custom scrollers, refresh, and scroll-driven timelines. | Scroll interactions with deliberate geometry and teardown. |
 | [GSAP Timeline](gsap-timeline/README.md) | Coordinates steps through labels, positions, defaults, nesting, and playback. | Maintainable, controllable sequences. |
+
+### 3D assets and web viewers
+
+| Skill | What it does | Typical result |
+|---|---|---|
+| [Create 3D Assets](create-3d-assets/README.md) | Chooses an authoring route, builds editable meshes, exports for a game or viewer, and checks the delivered asset. | Blender sources or procedural geometry, GLB or engine exports, model inventories, and inspected previews. |
+
+The default workflow is Blender Python → GLB → target-runtime verification. Simple web shapes can use procedural Three.js; complex figures can start from suitable licensed meshes or authorized AI drafts followed by cleanup. The package includes researched tool comparisons and a dependency-free glTF inventory helper.
 
 ### Figma workflows
 
@@ -170,6 +179,9 @@ $ui-design audit and fix the named settings-page files, preserving our tokens.
 $ui-verification reproduce the focus findings and verify the fixes in the browser.
 
 $founder-codex compare these pricing packages using our costs and customer evidence.
+
+$create-3d-assets create a stylized robot with editable Blender source,
+export a GLB, and verify it in an interactive web viewer.
 ```
 
 Normal selection depends on a skill's description and invocation policy. Explicit invocation makes the intended workflow clear, but does not configure missing tools or authorize unrelated actions.
@@ -180,6 +192,7 @@ Useful combinations include:
 - **Build and verify UI:** Frontend Design or UI Design establishes direction; UI Design or Web Experience Design implements; UI Verification exercises the rendered result.
 - **Implement from Figma:** the Figma packages retrieve the exact design and fit it to project conventions, with rules recorded for repeated work if requested.
 - **Engineer motion:** Animate or UI Animation establishes purpose and behavior; GSAP packages supply library patterns; Review Animations critiques the result.
+- **Build a 3D web experience:** Create 3D Assets produces and checks the mesh; Web Experience Design integrates its presentation; UI Verification exercises the surrounding interface.
 - **Connect business and delivery:** Founder Codex grounds the decision and deliverable; a specialist skill handles the requested implementation or artifact format.
 
 Some entrypoints mention companion skills **not included** here, such as `product-design`, `typography-audit`, `ax-audit`, `animate-text`, or additional GSAP packages. Those mentions are routing guidance, not bundled dependencies. Consult each README and use the tools actually available in the session.
@@ -193,6 +206,8 @@ There is no single application build or universal test command for this collecti
 | Repository mapping | Git and Python 3.9+ for the Repo Context helper. |
 | Offline founder calculations | Python 3.8+; the finance helper uses the standard library. |
 | Recorded motion analysis | ffmpeg; OpenCV, NumPy, and SciPy for tracking and fitting. |
+| 3D asset authoring | Installed Blender for Blender workflows; a configured renderer for procedural web geometry. The inventory helper uses Python 3.9+ and the standard library. |
+| 3D delivery and optional generation | A target engine or web viewer; optional glTF Transform/Khronos validation. AI services or Blender bridges must actually be available, with service access and authorized spend where applicable. |
 | Pet assembly | Codex workspace-dependency access, its bundled Python with Pillow, image generation, and review workers. |
 | Browser verification | A reachable app, capable browser driver, and relevant auth or seeded data. |
 | Figma work | An accessible Figma MCP connection and the target design. |

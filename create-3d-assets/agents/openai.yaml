@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create 3D Assets"
+  short_description: "Build game assets and interactive web models"
+  default_prompt: "Use $create-3d-assets to make an editable 3D asset, export it for my game or website, and verify it in the target viewer."
