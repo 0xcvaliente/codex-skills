@@ -1,0 +1,4 @@
+interface:
+  display_name: "Review Animations"
+  short_description: "Review motion craft with evidence and focused corrections"
+  default_prompt: "Use $review-animations to review this drawer diff for timing, origins, interruptions, and reduced-motion behavior."

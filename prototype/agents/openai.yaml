@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prototype UI Variants"
+  short_description: "Build distinct UI alternatives behind a working visual picker"
+  default_prompt: "Use $prototype to build three distinct pricing-card variants in an isolated route with a visual picker."

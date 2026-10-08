@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mobile Native Web"
+  short_description: "Fix mobile web touch, viewport, safe-area, and browser details"
+  default_prompt: "Use $mobile-native to fix this mobile web screen’s viewport, input zoom, safe areas, and sticky hover behavior."

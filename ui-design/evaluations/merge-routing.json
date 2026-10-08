@@ -53,7 +53,8 @@
   {
     "skills": [
       "ui-design",
-      "ui-animation"
+      "mobile-native",
+      "animate"
     ],
     "query": "Make this settings page feel native on mobile. Hover sticks after tap and pull-to-refresh reloads the page.",
     "files": [
@@ -61,8 +62,8 @@
     ],
     "expected_behavior": [
       "Selects Audit mode, not Retrofit/make-responsive and not Build",
-      "Runs existing mobile-* rules (viewport, hover-only actions) and routes hover gating and :active press / touch-action: manipulation to ui-animation",
-      "Does not invent a hover-stuck rule or a new skill",
+      "Runs existing mobile-* rules first; uses mobile-native for a scoped platform-behavior follow-up and animate for requested press feedback, preserving the Audit load contract",
+      "Uses the installed focused companions without inventing another hover-stuck rule or skill; falls back to local references if a companion is unavailable",
       "Applies press feedback in the audited files; pull-to-refresh is craft-checklist overscroll, reported with file:line if the shell lives outside the fixture"
     ]
   }

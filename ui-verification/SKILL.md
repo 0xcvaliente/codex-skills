@@ -1,10 +1,11 @@
 ---
 name: ui-verification
 description: Runs scoped browser probes for focus, hit targets, overflow, themes, request failures, and performance attribution, with evidence linked to UI rule IDs. Use when asked to "verify this in the browser", "reproduce this finding", or "check the fix". For source audits and severity use ui-design; field metrics require RUM or CrUX.
-compatibility: Requires access to the target app and browser automation. Bundled JavaScript recipes use the Playwright page API.
 ---
 
 # UI Verification
+
+Runtime requirements: access to the target app and a capable browser driver. Bundled JavaScript recipes use the Playwright page API; adapt them only to APIs actually available in the session.
 
 Owns the browser session. Every other UI skill in this repo reasons about source and infers what the user will see; this one loads the page and measures it.
 
@@ -88,6 +89,10 @@ Stop here if the app will not boot. A verification run with no session produces 
 
 Budget the matrix before running it. Routes multiplied by viewports multiplied by themes grows fast, and a run that takes twenty minutes gets skipped next time. Two viewports (360 and 1280) and two themes cover the ground; add widths only where a probe already found an edge.
 
+For data-dependent failures, `break-ui` can supply plausible schema-valid fixtures: long names, empty values, missing optional media, localization, and outlier counts. Use seeded or isolated data. The existing viewport and pseudo-locale probes still test mechanical extremes; distinguish those from realistic application fixtures in the evidence. Do not mutate production records to create a test case.
+
+For mobile behavior, `mobile-native` can identify scenarios worth probing. A narrow viewport or touch emulation does not verify a physical device's keyboard, safe areas, browser chrome, haptics, or gesture conflicts; record the tested device/browser and keep untested behavior unknown.
+
 ## 3. Run the probes
 
 Each probe file carries its own recipe. Three rules hold across all of them:
@@ -147,6 +152,8 @@ The ones that cut across probes. Each probe file carries its own false positives
 - `ui-design`: reads source, produces the findings this skill reproduces, and owns tiering, the ship verdict, and the finding schema.
 - `typography-audit`: type findings that need a rendered measure or leading value can be handed here for the measurement.
 - `ax-audit`: agentic surfaces. Its runtime questions use the same session and probes.
-- `ui-animation`: motion craft. This skill can capture the timing, but judging the curve is that skill's.
+- `ui-animation`: recording analysis, curve fitting, and diagnosis; `review-animations`: craft critique. This skill supplies runtime captures and measurements.
+- `break-ui`: prepares realistic edge-case fixtures; this skill records their observed effects.
+- `mobile-native`: proposes platform-specific checks; this skill reports what the available browser or device actually demonstrated.
 
 Maintenance only: `evals/evals.json` holds the behavioural scenarios and routing prompts for anyone changing this skill. It never loads during a verification run.

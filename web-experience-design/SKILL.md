@@ -33,3 +33,16 @@ For a scoped repair inside an existing experience, inspect the affected code and
 - Match verification to claims. Static checks can catch code and token defects; they cannot establish visual quality, mobile usability, or that a 3D scene actually works.
 
 This skill is an original synthesis informed by the MIT-licensed [UI UX Pro Max](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) and [Web Design Studio](https://github.com/MustBeSimo/web-design-studio). It does not bundle their code, datasets, or installers.
+
+## Focused design companions
+
+Use these optional packages at a specific step without restarting the overall experience:
+
+- `prototype` compares working variants when the user requests them; otherwise build the representative slice directly.
+- `emil-design-eng` polishes a component within the established visual system.
+- `animate` constructs purposeful web motion; `review-animations` critiques it; `ui-animation` measures reference recordings or diagnoses jank.
+- `mobile-native` checks platform behavior; `break-ui` prepares realistic edge-case fixtures; `ui-verification` observes the rendered outcome.
+- `apple-design` supports a requested tactile or Apple-inspired control, rather than imposing that aesthetic on an unrelated brand.
+- `pick-ui-library` resolves a genuine dependency choice; reuse the existing stack when it already supports the interaction.
+
+The Emil-derived companions are pinned, locally bundled instructions. Read only the relevant guide and retain the user's scope, content, and runtime constraints.

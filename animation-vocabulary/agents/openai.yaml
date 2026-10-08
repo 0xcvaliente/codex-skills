@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animation Vocabulary"
+  short_description: "Name a described motion effect precisely"
+  default_prompt: "Use $animation-vocabulary to what is the effect called when a sheet resists a drag past its boundary and snaps back?"

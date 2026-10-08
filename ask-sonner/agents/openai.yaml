@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ask Sonner"
+  short_description: "Configure and troubleshoot Sonner toast behavior"
+  default_prompt: "Use $ask-sonner to fix these Sonner toasts appearing twice and losing the dark-mode styles."

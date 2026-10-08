@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animate Expo"
+  short_description: "Build device-aware motion and gestures in React Native"
+  default_prompt: "Use $animate-expo to add a gesture-driven sheet in this Expo app using its installed SDK and motion stack."

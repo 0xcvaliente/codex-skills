@@ -69,3 +69,15 @@ Use active voice as default. A CTA says exactly what happens when it is used: "S
 Treat failure and emptiness as moments for direction, not mood. Explain what went wrong and how to fix it, in the interface's voice rather than a person's. Errors don't apologize, and they are never vague about what happened. An empty screen is an invitation to act.
 
 Keep the tone conversational: plain verbs, sentence case, no filler, with tone matched to the brand and the audience. Let each written element do exactly one job.
+
+## Focused design companions
+
+Preserve the brief's visual direction and the project's design system when using these installed companions. Their examples are techniques, not a second aesthetic brief.
+
+- `emil-design-eng` refines a component's visual and interaction craft inside the chosen direction.
+- `prototype` builds a browser picker when the user asks to compare working variants.
+- `animate` implements purposeful web motion; `review-animations` critiques it; `ui-animation` measures recordings or diagnoses a specific problem.
+- `mobile-native` addresses mobile behavior; `break-ui` prepares plausible edge-case fixtures; `ui-verification` checks the rendered result.
+- `apple-design` applies tactile, Apple-inspired material and control techniques only when requested or appropriate to the established direction.
+
+Load only the companion needed for the task. Keep new libraries conditional on a real capability gap; use `pick-ui-library` for that decision.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Improve Animations"
+  short_description: "Audit app motion and plan focused improvements"
+  default_prompt: "Use $improve-animations to audit motion in this package and create prioritized implementation plans without changing app code."

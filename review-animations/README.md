@@ -1,46 +1,70 @@
 # Review Animations
 
-`review-animations` critiques animation code against a strict craft standard informed by Emil Kowalski's animation philosophy. It asks whether motion serves a purpose and feels responsive, coherent, physically understandable, interruptible, and accessible.
+Review a scoped animation diff or component for justified motion, responsiveness, timing, origins, interruption, performance, and accessibility. Return evidence-backed corrections and a calibrated verdict; use improve-animations for a whole-codebase roadmap.
 
-This is a specialized review workflow. It does not build unrelated features or provide a general correctness audit. The entrypoint includes `disable-model-invocation: true`, so it is intended to be deliberately invoked rather than treated as a catch-all review skill.
+Adapted for Codex from [Emil Kowalski’s skills](https://github.com/emilkowalski/skills),
+pinned to [`e8a175de22ae`](https://github.com/emilkowalski/skills/tree/e8a175de22ae1e49370fc144c1f3bb9aeedf988d).
 
-## When to use it
+## Workflow
 
-Use it to review an animation diff, inspect a component's entrances and exits, or evaluate timing, origins, gestures, and reduced-motion behavior. Provide the target files or change and enough product context to establish interaction frequency.
+1. Pin files/diff and product frequency; inspect connected triggers and state transitions.
+2. Read STANDARDS.md and the guide review/correction hierarchy; check all relevant standards.
+3. Remove unjustified motion before polishing its ingredients. Respect intentional project tokens and user requirements.
+4. Validate suspected defects with source and playback where possible; distinguish taste preferences from blocking failures.
+5. Report before editing unless fixes were requested.
 
-Use [Animate](../animate/README.md) to construct motion and [UI Animation](../ui-animation/README.md) for broader implementation, debugging, or recording analysis.
+## Output
 
-## What it reviews
+Before / After / Why findings with file locations, then Block or Approve for the verified scope. Name missing runtime proof.
 
-The ten standards cover justified motion, frequency, responsive easing, routine UI duration, transform origin and physicality, interruption, inexpensive animated properties, accessibility, asymmetric timing, and cohesion with the product.
-
-High-signal issues include `transition: all`, entrances from `scale(0)`, slow UI easing, long unmotivated durations, keyframes that restart during repeated actions, layout-heavy animation, missing reduced motion, and hover behavior that misfires on touch devices.
-
-Its correction hierarchy starts with removing motion that does not belong, then reducing it, improving easing and origin, preserving interruption, addressing performance, and polishing only where the fundamentals already work. The standards are this skill's review criteria; applying them still requires understanding the reviewed scenario.
-
-## Output and validation
-
-The required result has two parts: a **Before / After / Why** findings table and a tiered assessment ending in **Block** or **Approve**. Findings cite exact file and line locations. Precise curves, durations, and spring values come from the standards reference.
-
-Source inspection can identify implementation defects, but perceived timing and gesture behavior may require browser playback, slow motion, frame stepping, or a real device. When feel cannot be established from code alone, the review should name the additional check.
-
-## Requirements
-
-The package has no executable scanner or runtime dependency. It needs access to the motion code and preferably a rendered example. It reviews the requested scope rather than automatically sweeping an entire repository.
-
-## Example requests
+## Use
 
 ```text
-$review-animations review this drawer diff for timing, origin,
-interruptibility, performance, and reduced-motion behavior.
-
-$review-animations assess these toast transitions and return
-specific corrections with a Block or Approve verdict.
+$review-animations review this drawer diff for timing, origins, interruptions, and reduced-motion behavior.
 ```
 
-## Package guide
+From a clone of `0xcvaliente/codex-skills`, install the whole package:
 
-- [SKILL.md](SKILL.md): scope, review method, correction hierarchy, and output contract.
-- [STANDARDS.md](STANDARDS.md): detailed rules, timing tables, curves, and technique guidance.
+```bash
+python3 .system/skill-installer/scripts/install-skill-from-github.py \
+  --repo 0xcvaliente/codex-skills --path review-animations
+```
 
-See the [repository README](../README.md) for installation.
+The collection installer defaults to `$CODEX_HOME/skills` or `~/.codex/skills`.
+Use `--dest` for another host, including `--dest ~/.agents/skills` where that is
+the configured discovery directory. Preserve local edits before replacing an
+existing copy. See the [official skills documentation](https://learn.chatgpt.com/docs/build-skills).
+
+## Codex behavior and requirements
+
+The skill uses existing project tools and available native browser/app/terminal
+capabilities. It does not install a runtime by being loaded. Read-only requests
+produce findings; requested fixes proceed within their scope. Dependencies and
+version-sensitive APIs must match the actual project. Physical-device, release
+build, and performance claims require corresponding evidence. Normal automatic
+selection is enabled with a scoped description; explicit invocation identifies
+the desired workflow.
+
+An audit or review is a report by default. If fixes were requested in the same
+request, implement and verify them rather than imposing another permission step.
+
+## Package contents
+
+- [SKILL.md](SKILL.md): concise Codex routing, workflow, and output.
+- [Detailed guide](references/guide.md): the complete working guidance, loaded by relevant section.
+- [Codex notes](references/codex-notes.md): scope, tools, versions, input semantics, and verification.
+- [Original entrypoint](references/upstream-SKILL.md.source): exact upstream source without nested skill discovery.
+- [Source manifest](references/source-manifest.json) and [provenance](references/provenance.md).
+- [STANDARDS.md](STANDARDS.md).
+
+## Validation and license
+
+From the collection root, with Python and PyYAML:
+
+```bash
+python3 .system/skill-creator/scripts/quick_validate.py review-animations
+```
+
+Structural validation and source hashes do not establish runtime UI quality.
+Verify the actual target interaction for real work. MIT, copyright 2026 Emil
+Kowalski; the exact [license](LICENSE) is retained.

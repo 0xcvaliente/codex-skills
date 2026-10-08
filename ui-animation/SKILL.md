@@ -1,6 +1,6 @@
 ---
 name: ui-animation
-description: Builds, reviews, and measures UI motion, including springs, gestures, scroll effects, curve fitting from recordings, and sparse interface sound. Use when asked to "add animation", "match this easing", "reverse engineer this motion", "add a click sound", or find animation opportunities. For action semantics use product-design; for visual layout use ui-design.
+description: Measures and reconstructs UI motion from recordings, fits easing and springs, diagnoses jank, tunes gestures, and gates sparse interface sound. Use for "match this easing", "reverse engineer this motion", "debug this animation", or "add a click sound". For new web motion use animate; for motion critique use review-animations; for opportunity discovery use find-animation-opportunities.
 ---
 
 # UI Animation
@@ -10,7 +10,22 @@ description: Builds, reviews, and measures UI motion, including springs, gesture
 
 ## Routing boundary
 
-`product-design` owns action semantics, scope, reversibility, and contested state choices. `ui-design` builds and styles those states. `ui-animation` owns timing, gestures, and measured motion. A routine missing loading or error state stays with the UI build; a gesture replacing a control needs a product decision and an accessible alternative before its physics.
+`product-design`, where available, owns action semantics and contested state choices. `ui-design` builds and styles those states. This skill owns recording analysis, curve fitting, motion debugging, live tuning, gesture mechanics, and interface sound. A routine missing loading or error state stays with the UI build; a gesture replacing a control needs an accessible alternative and a settled action model before its physics.
+
+Choose a focused companion when installed; retain the relevant local references below as a fallback, and honor explicit invocation of this skill.
+
+| Request | Preferred skill |
+| --- | --- |
+| Construct a new web interaction or transition | `animate` |
+| Review motion code and propose corrections | `review-animations` |
+| Audit an app's motion and produce an implementation roadmap | `improve-animations` |
+| Find worthwhile opportunities without changing code | `find-animation-opportunities` |
+| Name an effect from a description or recording | `animation-vocabulary` |
+| Build Expo or React Native motion | `animate-expo` |
+| Build a requested tactile or Apple-inspired control | `apple-design` |
+| Measure, reconstruct, debug, tune gestures, or add sparse sound | `ui-animation` |
+
+A critique or discovery request does not authorize implementation. Load only the selected companion and relevant references; do not load every guide for a small task.
 
 
 ## Reference files
@@ -43,7 +58,7 @@ description: Builds, reviews, and measures UI motion, including springs, gesture
 - Animate for feedback, orientation, continuity, or deliberate delight. If it's just "it looks cool" and the user sees it often, don't.
 - Keep keyboard focus and repeated navigation immediate. A state transition may animate if focus and task completion do not wait for it.
 - Prefer CSS transitions for interruptible UI: keyframes restart from zero on interruption, transitions retarget. Use keyframes only for predetermined sequences.
-- Implementation priority: CSS transitions > WAAPI > CSS keyframes > JS (`requestAnimationFrame`); under load CSS stays smooth while JS drops frames.
+- Prefer the simplest engine that supports the required interruption, lifecycle, and gesture behavior. CSS transitions and WAAPI can run compositor-friendly work away from the main thread; CSS, WAAPI, and JS can also trigger expensive rendering work. Inspect the actual properties and profile the target browser before attributing jank to an engine. See [Motion performance](https://motion.dev/docs/performance) and [MDN animation performance](https://developer.mozilla.org/en-US/docs/Web/Performance/Guides/CSS_JavaScript_animation_performance).
 - Asymmetric timing: occasional interactions can enter slightly slower, exit fast. High-frequency ephemeral UI (hover highlights, popovers, panel toggles) inverts this: enter instantly (0ms), exit with a brief fade (100-150ms) so the action feels immediate.
 - Tappable controls press on `:active` at 0ms and set `touch-action: manipulation`.
 - Use `@starting-style` for DOM entry; fall back to a `data-mounted` attribute where unsupported.
@@ -61,7 +76,7 @@ description: Builds, reviews, and measures UI motion, including springs, gesture
 
 ## What to animate
 
-- Movement: `transform` and `opacity` only; they skip layout and paint.
+- Prefer `transform` and `opacity` for movement and fading; they can avoid layout and paint when composited, but are not an unconditional performance guarantee. Profile large layers and target devices. Individual transform values implemented through CSS variables may behave differently from a complete `transform`. Treat engine and property rankings in older references as heuristics.
 - State feedback: `color`, `background-color`, and `opacity` are acceptable.
 - Never animate layout properties (`width`, `height`, `top`, `left`); they trigger layout recalc every frame. (Exception: a deliberate container tween, see the card-resize and container-morph recipes.)
 - Never use `transition: all`; it animates unintended properties and silently adopts future ones. List them explicitly.
@@ -224,13 +239,13 @@ Maintenance only: when changing Discovery routing or the gate, run the scenarios
 
 ## Sources
 
-Interface SFX gating taken from Craft (gustavo-fior) and Raphael Salaja's web-sound writing. Novelty 90/10 split, one-shot intro gating, and `animation-play-state` on loops taken from Rauno Freiberg. Rejected vendoring emilkowalski/skills and gustavo-fior/craft: trigger collision with this skill. Clip-path and proportional scale already lived here.
+Interface SFX gating taken from Craft (gustavo-fior) and Raphael Salaja's web-sound writing. Novelty 90/10 split, one-shot intro gating, and `animation-play-state` on loops taken from Rauno Freiberg. The Emil Kowalski collection is now integrated as 14 focused Codex packages, reviewed at revision `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`; the routing table above keeps this package's measurement, debugging, gesture, and sound capabilities. Gustavo Fior's full Craft package is not bundled. Clip-path and proportional scale already lived here.
 
 ## Related skills
 
 - `product-design`: which states exist, what an action affects, and whether it is reversible. Route here first when a gesture replaces a control, since swipe-to-delete and hold-to-confirm change what the user can do before they change how it moves.
 - `ui-design` Direction mode: visual direction, palettes, typography; settle the visual system before tuning motion.
-- `ui-design` Audit mode: page/feature-level UI quality audit. Motion craft and fixes belong here.
+- `ui-design` Audit mode: page/feature-level UI quality audit; use `review-animations` for focused motion critique and this skill for measurement or diagnosis.
 - Optional external `animate-text` skill where installed: curated named text effects (typewriter, line reveal, stagger builds) with exact JSON specs.
 
 Maintenance only: `evals/evals.json` contains regression scenarios for changes to this skill; it does not load during a user task.

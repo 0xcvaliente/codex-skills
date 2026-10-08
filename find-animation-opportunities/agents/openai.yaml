@@ -1,0 +1,4 @@
+interface:
+  display_name: "Find Animation Opportunities"
+  short_description: "Find purposeful motion opportunities without adding code"
+  default_prompt: "Use $find-animation-opportunities to find useful motion opportunities in this UI and tell me which interactions should stay instant."

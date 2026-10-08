@@ -1,0 +1,4 @@
+interface:
+  display_name: "Write Swift"
+  short_description: "Write version-aware Swift with clear ownership and concurrency"
+  default_prompt: "Use $write-swift to fix this Swift concurrency error while preserving the package’s public API and compiler settings."

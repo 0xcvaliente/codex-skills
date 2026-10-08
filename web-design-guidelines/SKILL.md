@@ -40,3 +40,14 @@ For a dedicated audit, group findings by file and omit files that have no releva
 ## Verification
 
 Use the project's normal tests and linting. Where practical, verify keyboard navigation, visible focus, zoom, reduced motion, narrow layouts, long content, form errors, and both light and dark themes. Use browser or visual inspection when the task materially depends on rendered behavior.
+
+## Focused companion workflows
+
+Keep this package's local checklist and the project's design system authoritative for its review. Optional companions cover narrower jobs:
+
+- `emil-design-eng` for component craft; `mobile-native` for mobile behavior and chrome.
+- `break-ui` for plausible schema-valid edge-case fixtures, followed by `ui-verification` for observed overflow, focus, or failure evidence.
+- `animate` for new web motion; `review-animations` for motion critique; `ui-animation` for recording analysis and performance diagnosis.
+- `pick-ui-library` only when a library decision is part of the task or a capability gap requires one. Check the target project's installed versions and current official APIs before changing dependencies.
+
+Select only relevant companions. Their retained source examples do not replace these rules at runtime or authorize a broader redesign.

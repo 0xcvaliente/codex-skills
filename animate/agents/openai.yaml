@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animate"
+  short_description: "Build interruptible web UI motion with purposeful timing"
+  default_prompt: "Use $animate to animate this drawer with interruptible entry and exit, preserving our tokens and keyboard focus."

@@ -12,7 +12,7 @@
       "Flags the Advanced toggle as a feedback gap: onClick with no :active or transition",
       "Flags the {expanded && ...} conditional as teleporting state, and proposes an opacity plus transform entrance rather than an animated height",
       "Flags the saved confirmation as a rare high-emotion moment where the delight budget applies",
-      "REJECTS CommandMenu explicitly: keyboard-initiated and opened 100+ times a day, so it never animates",
+      "REJECTS gratuitous CommandMenu motion because it is opened 100+ times a day; keeps keyboard focus and task completion immediate without asserting that every keyboard-triggered visual transition is forbidden",
       "REJECTS the requests table: functional data the user is reading, where motion hinders",
       "Includes the rejected-candidates section, each naming the gate question that killed it",
       "Names a purpose (feedback, orientation, continuity, delight) for every surviving suggestion, and gives exact property, duration, and curve values drawn from the easing defaults table",

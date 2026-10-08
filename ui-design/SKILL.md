@@ -1,6 +1,6 @@
 ---
 name: ui-design
-description: Designs and builds React/Next/Tailwind UI and audits visual and interaction defects. Use when asked to "build a landing page", "extract our design system", "add dark mode", "make this responsive", "remove UI slop", or "audit this component". For product decisions use product-design; for browser measurements use ui-verification; for motion use ui-animation.
+description: Designs and builds React/Next/Tailwind UI and audits visual and interaction defects. Use when asked to "build a landing page", "extract our design system", "add dark mode", "make this responsive", "remove UI slop", or "audit this component". For product decisions use product-design; for browser measurements use ui-verification; for new motion use animate; for motion critique use review-animations; for recording analysis use ui-animation.
 ---
 
 # UI Design
@@ -8,7 +8,7 @@ description: Designs and builds React/Next/Tailwind UI and audits visual and int
 Owns everything that touches the built artifact: pick the visual direction, implement it in code, and audit what shipped.
 
 - **IS:** choosing visual direction (palettes, type scales, tokens, layout systems, CRO strategy, brand boards), building UI in code, and auditing built React or Next frontends for user-facing defects with `file:line` evidence, applied fixes, and a ship verdict.
-- **IS NOT:** deciding what an interface should do before it exists (use `product-design`); non-UI correctness and code quality (use `tidy`); agentic-app review (use `ax-audit`); deep typography or motion passes (use `typography-audit`, `ui-animation`); the wording of a string (use `ghostwriter`).
+- **IS NOT:** deciding what an interface should do before it exists (use `product-design`); non-UI correctness and code quality (use `tidy`); agentic-app review (use `ax-audit`); deep typography or motion passes (use `typography-audit`, `review-animations`, or `ui-animation` for measurement); the wording of a string (use `ghostwriter`).
 
 ## Contents
 
@@ -27,7 +27,7 @@ Owns everything that touches the built artifact: pick the visual direction, impl
 
 ## Routing boundary
 
-`product-design` owns action semantics, scope, reversibility, and contested state choices. `ui-design` builds and styles those states. `ui-animation` owns timing, gestures, and measured motion. A routine missing loading or error state stays with the UI build; a gesture replacing a control needs a product decision and an accessible alternative before its physics.
+`product-design` owns action semantics, scope, reversibility, and contested state choices. `ui-design` builds and styles those states. `animate` constructs new web motion; `review-animations` critiques it; `ui-animation` measures recordings, diagnoses motion, and tunes gesture mechanics. A routine missing loading or error state stays with the UI build; a gesture replacing a control needs a product decision and an accessible alternative before its physics.
 
 
 For brand positioning, identity changes, or a system spanning campaigns and physical applications, that is out of scope; name the open brand question and apply the identity the company already has. Direction mode applies that identity to UI; it does not reopen an approved brand.
@@ -51,7 +51,7 @@ Resolve one mode before acting, and load only that mode's files.
 
 **No mode named?** Build if the target does not exist. Audit if it does and no change was requested. Resolving "look at this page" or "can you improve this checkout" to Build silently skips the rule run, which is the most expensive mistake this table prevents.
 
-**Named chrome fixes still audit.** "Feel native on mobile" runs existing `mobile-*` rules (viewport, hover-only actions) and `ui-animation` for press and hover gating. It does not go to Retrofit or Build. Retrofit's "fix this on mobile" is layout.
+**Named chrome fixes still audit.** "Feel native on mobile" runs existing `mobile-*` rules (viewport, hover-only actions); `mobile-native`, when installed, can supply targeted platform-behavior corrections after those checks. Use `animate` for a requested press transition and `ui-animation` when its mechanics need diagnosis. Keep the Audit load contract below; companion guides are a separate scoped follow-up, not extra audit inputs. Retrofit's "fix this on mobile" is layout.
 
 Direction and Build chain: for a new surface with no direction, run Direction first (or propose one inline for small surfaces), then Build. If a direction already exists in the project, go straight to Build. Extract chains ahead of both on an existing codebase: a direction chosen without knowing what the project already uses is a second design system, not a direction.
 
@@ -223,10 +223,11 @@ Taken as compact audit rules and build bullets, not as vendored skills:
 - Jakub Krehel and Gustavo Fior craft notes: OKLCH ramps, optical compensation on dark surfaces, faint grain against banding, squircles on icon tiles only. Nested radius, hit areas, interruptible motion, and image outlines already lived in this collection.
 - Paco Coursey: theme-toggle transition gating already lived in `ui-animation`. SVG-plus-backdrop blur stays in `materials.md`.
 
-Rejected (same trigger as skills already in this repo, so installing them would reconcile two owners):
+Integrated companion collection: [emilkowalski/skills](https://github.com/emilkowalski/skills), reviewed at `e8a175de22ae1e49370fc144c1f3bb9aeedf988d`. Its 14 Codex packages retain their complete source guides, resources, and MIT notices. Use the focused routing below rather than loading all of them into an audit.
+
+Other overlapping collections not bundled:
 
 - `npx skills add jakubkrehel/skills` (`better-ui`, `better-typography`, `better-interface`)
-- `npx skills add emilkowalski/skill` (`emil-design-eng`, `animate`, `review-animations`)
 - `npx skills add gustavo-fior/craft` (`craft-design-engineering`)
 
 Taste essays (Developing Taste, The Concept of Taste) and Disney's 12 principles were left out: they are generic coaching the model already has. Benji Taylor's Agentation belongs with `ax-audit` when a product is annotating a UI for agents, not with visual polish.
@@ -238,9 +239,16 @@ Taste essays (Developing Taste, The Concept of Taste) and Disney's 12 principles
 - `tidy`: correctness and code quality in the same diff; this skill covers only user-facing quality.
 - `ax-audit`: agentic surfaces. Run both on an agentic feature.
 - `typography-audit`: deep typography (pairing, OpenType systems, measure, leading, display type); the `type-` rules here are the readable-floor check and hover-weight reflow.
-- `ui-animation`: the passage between two states (timing, easing, springs, gesture physics).
+- `animate` / `review-animations`: construct or critique web motion; `ui-animation`: recording analysis, curve fitting, debugging, and gesture mechanics.
+- `emil-design-eng`: focused component and interaction craft inside the chosen visual system.
+- `prototype`: a working browser picker when the user requests multiple variants; Options mode can still use the local `ideas.md` workflow.
+- `pick-ui-library`: a grounded dependency decision when the current stack lacks the required primitive.
+- `mobile-native`: platform behavior and mobile chrome fixes after the relevant audit checks.
+- `break-ui`: plausible schema-valid edge-case fixtures for resilience checks; `ui-verification` observes their rendered effects.
 - `ghostwriter`: landing-page copy, message match, persuasion frameworks.
 - `seo`: meta descriptions and page titles.
+
+These companions are optional. Preserve this skill's mode and load contracts, project tokens, and named scope; no companion automatically authorizes a redesign or a dependency installation.
 
 Maintenance only: when changing audit routing or anti-slop behavior, run the scenarios in `evaluations/` as a regression rubric.
 

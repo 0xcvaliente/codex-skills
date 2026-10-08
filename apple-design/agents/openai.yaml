@@ -1,0 +1,4 @@
+interface:
+  display_name: "Apple Design"
+  short_description: "Apply physical continuity and restraint to interface design"
+  default_prompt: "Use $apple-design to refine this sheet’s drag and release behavior using physical continuity and reduced motion."

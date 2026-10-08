@@ -1,0 +1,4 @@
+interface:
+  display_name: "Emil Design Engineering"
+  short_description: "Polish interface details using Emil Kowalski’s craft guidance"
+  default_prompt: "Use $emil-design-eng to polish this settings panel while preserving its visual identity and existing components."

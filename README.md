@@ -4,7 +4,7 @@
 
 This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create explanatory diagrams and 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
 
-The collection currently contains **29 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
+The collection currently contains **41 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
 ## What this repository provides
 
@@ -47,6 +47,14 @@ Pstack Codex preserves all 164 files from pstack 0.15.15, including 27 workflows
 | [Web Experience Design](web-experience-design/README.md) | Plans and builds substantial product, narrative, cinematic, and 3D web experiences. | A coherent experience developed through a representative slice and rendered checks. |
 | [Web Design Guidelines](web-design-guidelines/README.md) | Applies local accessibility, interaction, resilience, responsive, and performance guidance. | Robust UI changes or a focused file-level audit. |
 | [UI Verification](ui-verification/README.md) | Exercises a running app with browser probes and records reproducible evidence. | Measurements, captures, reproduced or rejected findings, and clearing re-runs. |
+| [Emil Design Engineering](emil-design-eng/README.md) | Refines component feedback, spacing, typography, shadows, and interaction continuity within the existing visual system. | Focused UI polish or a Before / After / Why craft review. |
+| [Apple Design](apple-design/README.md) | Applies requested Apple-inspired continuity, materials, gestures, and platform behavior. | Tactile controls and coherent interactions fitted to the target platform. |
+| [Mobile Native](mobile-native/README.md) | Repairs mobile-web behavior such as sticky hover, safe areas, browser chrome, and touch interactions. | Targeted mobile fixes with explicit device-verification limits. |
+| [Pick UI Library](pick-ui-library/README.md) | Evaluates an actual primitive or interaction gap against the installed stack and current official APIs. | A justified library choice or reuse recommendation. |
+| [Prototype](prototype/README.md) | Builds working variants and a browser picker when comparison is requested. | Comparable prototypes and a clear path into the selected implementation. |
+| [Break UI](break-ui/README.md) | Prepares plausible schema-valid data that exposes fragile layouts and states. | Realistic edge-case fixtures, observed failures, and scoped fixes when requested. |
+| [Ask Sonner](ask-sonner/README.md) | Implements or diagnoses Sonner toasts using the project's compatible APIs and accessible feedback semantics. | Integrated toast behavior or focused troubleshooting. |
+| [Write Swift](write-swift/README.md) | Implements Swift and SwiftUI work with platform, concurrency, ownership, and API checks. | Native code with relevant compiler/build evidence and stated gaps. |
 | [Vercel React Best Practices](vercel-react-best-practices/README.md) | Improves React and Next.js performance while preserving rendering, caching, and authorization correctness. | Focused optimizations or prioritized, version-grounded findings. |
 
 ### Animation and motion engineering
@@ -54,12 +62,20 @@ Pstack Codex preserves all 164 files from pstack 0.15.15, including 27 workflows
 | Skill | What it does | Typical result |
 |---|---|---|
 | [Animate](animate/README.md) | Decides whether an interaction should animate, then constructs its motion in a deliberate sequence. | Animation code with purpose, timing, interruption, and accessibility choices. |
-| [UI Animation](ui-animation/README.md) | Builds, reviews, discovers, debugs, and measures motion, gestures, springs, and sparse interface sound. | Motion code, recording analysis, fitted parameters, and handoff specifications. |
+| [UI Animation](ui-animation/README.md) | Measures and reconstructs recordings, fits curves, diagnoses motion, tunes gesture mechanics, and gates sparse sound. | Fitted parameters, diagnostic evidence, motion repairs, and handoff specifications. |
 | [Review Animations](review-animations/README.md) | Reviews motion against a strict craft standard and defined correction hierarchy. | Before/after/why findings and a Block or Approve verdict. |
+| [Animate Expo](animate-expo/README.md) | Builds React Native and Expo motion using the project's compatible gesture, worklet, and navigation stack. | Native animation code with platform checks and device-only gaps. |
+| [Animation Vocabulary](animation-vocabulary/README.md) | Names an effect from its observed behavior or a plain-language description. | The best matching term and useful disambiguation. |
+| [Improve Animations](improve-animations/README.md) | Audits an app's motion and prioritizes an implementation roadmap. | An evidence-grounded motion audit and phased plan; fixes when requested. |
+| [Find Animation Opportunities](find-animation-opportunities/README.md) | Finds worthwhile feedback and continuity gaps without editing by default. | Ranked opportunities and rejected candidates with concrete locations. |
 | [GSAP Core](gsap-core/README.md) | Explains tweens, easing, stagger, transforms, playback, and responsive setup. | Correctly configured GSAP animations. |
 | [GSAP React](gsap-react/README.md) | Handles React refs, scoped selectors, `useGSAP`, contexts, and lifecycle cleanup. | Component-owned GSAP integration. |
 | [GSAP ScrollTrigger](gsap-scrolltrigger/README.md) | Configures reveals, scrub, pinning, custom scrollers, refresh, and scroll-driven timelines. | Scroll interactions with deliberate geometry and teardown. |
 | [GSAP Timeline](gsap-timeline/README.md) | Coordinates steps through labels, positions, defaults, nesting, and playback. | Maintainable, controllable sequences. |
+
+The complete 14-skill [Emil Kowalski collection](https://github.com/emilkowalski/skills) is adapted for Codex at revision [`e8a175de22ae`](https://github.com/emilkowalski/skills/tree/e8a175de22ae1e49370fc144c1f3bb9aeedf988d), reviewed on 2026-10-08. This adds 12 packages and upgrades the existing Animate and Review Animations packaging. Six broader design packages also have updated companion routing; their existing helpers, local rule corpus, recipes, and browser probes are preserved. See the [design collection guide](docs/design-skills.md) for workflow selection, installation, verification, and maintenance.
+
+Each Emil package has a concise Codex entrypoint, a detailed working guide, exact upstream source, supporting resources, a source checksum manifest, MIT license, and invocation metadata. `emil-design-eng` also includes the repository's performance cheatsheet. Cursor-only frontmatter is not carried into active Codex entrypoints. Source examples are contextual defaults: current user requirements, installed APIs, accessible input behavior, and actual verification evidence take precedence. See each package's `references/provenance.md` for the retained source inventory and adaptation notes.
 
 ### Diagrams and explanatory visuals
 
@@ -197,6 +213,14 @@ $pstack-codex fix this bug: reproduce it, trace the mechanism, and verify the or
 
 $pstack-codex interrogate this branch and report source-supported correctness findings.
 
+$emil-design-eng polish this settings panel while preserving our visual identity.
+
+$animate build an interruptible drawer transition with reduced motion.
+
+$improve-animations audit this app and prioritize a motion improvement plan.
+
+$break-ui generate realistic edge-case fixtures for this table without editing production data.
+
 $ui-design audit and fix the named settings-page files, preserving our tokens.
 
 $ui-verification reproduce the focus findings and verify the fixes in the browser.
@@ -220,7 +244,8 @@ Useful combinations include:
 - **Understand and restructure:** Repo Context locates verified code; Codebase Design evaluates interfaces; Domain Modeling records business language where needed.
 - **Build and verify UI:** Frontend Design or UI Design establishes direction; UI Design or Web Experience Design implements; UI Verification exercises the rendered result.
 - **Implement from Figma:** the Figma packages retrieve the exact design and fit it to project conventions, with rules recorded for repeated work if requested.
-- **Engineer motion:** Animate or UI Animation establishes purpose and behavior; GSAP packages supply library patterns; Review Animations critiques the result.
+- **Engineer motion:** Animate constructs web motion; Animate Expo handles React Native; Review Animations critiques a scoped change; Improve Animations plans an app-wide pass. UI Animation measures recordings and diagnoses mechanics; GSAP packages supply library-specific patterns.
+- **Polish and stress UI:** Emil Design Engineering refines component craft; Mobile Native addresses mobile behavior; Break UI supplies realistic fixtures; UI Verification records the rendered evidence. Prototype compares working variants when requested, and Pick UI Library resolves genuine dependency gaps.
 - **Build a 3D web experience:** Create 3D Assets produces and checks the mesh; Web Experience Design integrates its presentation; UI Verification exercises the surrounding interface.
 - **Explain a system:** Repo Context locates source evidence; Diagram Craft models and renders the relationships with explicit assumptions and editable outputs.
 - **Connect business and delivery:** Founder Codex grounds the decision and deliverable; a specialist skill handles the requested implementation or artifact format.
@@ -237,6 +262,7 @@ There is no single application build or universal test command for this collecti
 | Pstack Codex integrity and helper checks | Python 3.9+ standard library; Bash for the decision logger. Core workflows use project/native tools. Original Bun/Cursor helpers are retained source implementations; optional Benny needs configured connectors, app control, and explicit action authorization. |
 | Offline founder calculations | Python 3.8+; the finance helper uses the standard library. |
 | Diagram scene rendering and SVG extraction | Python 3.9+ standard library; browser measurement and PNG/PDF export optionally use Playwright plus Chromium. |
+| Emil design, motion, and native implementation | Existing project framework and compatible libraries; a browser or platform build for runtime claims. Swift/SwiftUI needs the relevant Apple toolchain; Expo/React Native needs a compatible SDK and gesture/motion stack. Sonner work needs the target app's compatible Sonner package. Instruction installation adds none of these automatically. |
 | Recorded motion analysis | ffmpeg; OpenCV, NumPy, and SciPy for tracking and fitting. |
 | 3D asset authoring | Installed Blender for Blender workflows; a configured renderer for procedural web geometry. The inventory helper uses Python 3.9+ and the standard library. |
 | 3D delivery and optional generation | A target engine or web viewer; optional glTF Transform/Khronos validation. AI services or Blender bridges must actually be available, with service access and authorized spend where applicable. |
@@ -275,10 +301,12 @@ Installed copies do not update automatically when the clone changes. Compare the
 
 Strix Codex additionally checks [usestrix/strix](https://github.com/usestrix/strix) as its upstream source of truth each time the skill is invoked. Checks report `current`, `updates_available`, or `unknown`; they do not schedule background work, overwrite the installed package, or advance its reviewed baseline. Use its [maintenance procedure](strix-codex/references/upstream-maintenance.md) to review and incorporate upstream changes before publishing and synchronizing the adaptation.
 
+For the Emil collection, compare the pinned revision and `references/source-manifest.json` files against upstream before updating. Preserve existing local helpers and Codex scope/verification notes; review any changed APIs with current official documentation. Update exact source copies, working guides, manifests, package READMEs, and this catalog together. These packages do not silently fetch or execute upstream instructions at invocation.
+
 When adding or changing a package, keep its description precise, preserve user scope, link deeper guidance where relevant, and update its README and this catalog. Add scripts for reliable reusable mechanics. Record only checks actually performed and distinguish missing verification from a pass.
 
 ## Licensing and provenance
 
 Licensing is recorded within individual packages; this repository has no single root license file establishing one license for the entire collection. Some packages retain license texts, some declare terms in frontmatter, and others document sources in the entrypoint. Check relevant material before reuse or redistribution rather than assuming a uniform license.
 
-Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Ponytail Codex retains DietrichGebert's [MIT license](ponytail-codex/LICENSE) and [pinned adaptation notes](ponytail-codex/references/provenance.md); upstream benchmark figures are attributed to their published environment rather than claimed as Codex results. Pstack Codex retains Lauren Tan's [MIT license](pstack-codex/LICENSE) and all 164 upstream files with a [pinned manifest and adaptation notes](pstack-codex/references/provenance.md). Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
+Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Ponytail Codex retains DietrichGebert's [MIT license](ponytail-codex/LICENSE) and [pinned adaptation notes](ponytail-codex/references/provenance.md); upstream benchmark figures are attributed to their published environment rather than claimed as Codex results. Pstack Codex retains Lauren Tan's [MIT license](pstack-codex/LICENSE) and all 164 upstream files with a [pinned manifest and adaptation notes](pstack-codex/references/provenance.md). All 14 Emil-derived packages retain Emil Kowalski's [MIT license](emil-design-eng/LICENSE), exact source entrypoints, supporting resources, and per-package [provenance](emil-design-eng/references/provenance.md). Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pick UI Library"
+  short_description: "Choose a compatible UI library using a curated shortlist"
+  default_prompt: "Use $pick-ui-library to choose a toast or dialog library for this project, considering what is already installed."

@@ -15,7 +15,7 @@ Answer these four questions in order before writing animation code. SKILL.md car
 
 | Frequency | Examples | Decision |
 |---|---|---|
-| 100+ times/day | Keyboard shortcuts, command palette toggle | No animation. Ever. |
+| 100+ times/day | Keyboard shortcuts, command palette toggle | Keep focus and task completion immediate; omit decorative transitions by default. |
 | Tens of times/day | Hover effects, list navigation | Remove or drastically reduce |
 | Occasional | Modals, drawers, toasts | Standard animation |
 | Rare / first-time | Onboarding, feedback forms, celebrations | Can add delight |
@@ -75,4 +75,4 @@ Sweep these seam classes. The skill is done sweeping when each has either yielde
 
 The last row is where the delight budget lives, and it is the only tier where bounce, generous stagger, or a longer beat are welcome.
 
-**Report both halves.** A discovery pass caps at five to seven suggestions ordered by leverage, and it must also list two to five places deliberately *not* suggested, each naming the question that killed it ("command palette open/close: keyboard-initiated, 100+/day, never animate"). The rejected list is what separates a discovery pass from an animation wishlist. Where the interface is already close to right, saying so is the correct result, not a failure.
+**Report both halves.** A discovery pass caps at five to seven suggestions ordered by leverage, and it must also list two to five places deliberately *not* suggested, each naming the question that killed it ("command palette open/close: 100+/day, gratuitous motion adds repetition; keep focus immediate"). The rejected list is what separates a discovery pass from an animation wishlist. Where the interface is already close to right, saying so is the correct result, not a failure.
