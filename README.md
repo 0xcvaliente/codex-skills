@@ -4,7 +4,7 @@
 
 This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create explanatory diagrams and 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
 
-The collection currently contains **27 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
+The collection currently contains **28 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
 ## What this repository provides
 
@@ -31,6 +31,7 @@ Install the packages relevant to your work. Several skills cover neighboring con
 | Skill | What it does | Typical result |
 |---|---|---|
 | [Repo Context](repo-context/README.md) | Navigates projects with compact notes, filename maps, and checks against recorded source evidence. | Updated project notes, a scoped inventory, and stale-evidence status. |
+| [Ponytail Codex](ponytail-codex/README.md) | Applies the smallest complete change, with lite/full/ultra levels, connected-code reviews, repository audits, and shortcut ledgers. | Focused implementation, prioritized findings, or counted `ponytail:` debt. |
 | [Codebase Design](codebase-design/README.md) | Designs deep modules with small interfaces and useful seams. | Interface proposals, design comparisons, and testable restructuring. |
 | [Domain Modeling](domain-modeling/README.md) | Resolves business terminology and records consequential tradeoffs. | A precise `CONTEXT.md` glossary and selective ADRs. |
 
@@ -185,6 +186,10 @@ Invoke a skill by name and provide the target, constraints, and desired result:
 ```text
 $repo-context locate the checkout flow and check the relevant architecture notes.
 
+$ponytail-codex fix this bug with the smallest complete change and verify affected callers.
+
+$ponytail-codex review the staged changes for bugs, expected load, and unnecessary code.
+
 $ui-design audit and fix the named settings-page files, preserving our tokens.
 
 $ui-verification reproduce the focus findings and verify the fixes in the browser.
@@ -268,4 +273,4 @@ When adding or changing a package, keep its description precise, preserve user s
 
 Licensing is recorded within individual packages; this repository has no single root license file establishing one license for the entire collection. Some packages retain license texts, some declare terms in frontmatter, and others document sources in the entrypoint. Check relevant material before reuse or redistribution rather than assuming a uniform license.
 
-Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
+Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Ponytail Codex retains DietrichGebert's [MIT license](ponytail-codex/LICENSE) and [pinned adaptation notes](ponytail-codex/references/provenance.md); upstream benchmark figures are attributed to their published environment rather than claimed as Codex results. Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.

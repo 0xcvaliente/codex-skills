@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ponytail Codex"
+  short_description: "Small complete changes, reviews, audits, and debt"
+  default_prompt: "Use $ponytail-codex to solve this task with the smallest complete change and meaningful verification."
