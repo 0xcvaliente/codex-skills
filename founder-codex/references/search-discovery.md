@@ -31,3 +31,16 @@ Treat provider behavior and published experiments as bounded observations. Do no
 ## Output and learning
 
 Deliver the requested audit, page, content map, technical patch, or measured visibility report. Distinguish proposed work, implemented changes, crawl/index observations, and business outcomes. Compare relevant windows while considering seasonality, algorithm changes, site migrations, and tracking gaps. Use [conversion and measurement](conversion-analytics.md) for causal or attribution questions.
+
+## Refresh and visibility measurement
+
+For a requested ranking-content refresh, inspect current query intent and the
+pages answering it before rewriting. Compare useful coverage and original
+value, preserve working URLs and inbound heading anchors, and date changed
+statistics. Match the reader's question rather than competitor word counts.
+
+For AI visibility, sample repeatable buyer intents across problem, solution,
+product comparison, and purchase/integration stages. Record citations separately
+from product recommendations, and both separately from visits and conversions.
+Fix a factual ambiguity on the owned source page when evidence supports it;
+absence or one incorrect sampled response alone does not prove its cause.

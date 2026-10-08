@@ -60,3 +60,10 @@ Report the route, the count, and the first occurrence with its location. A repea
 ## Evidence to write
 
 `console-<route>.json` with all four arrays intact, including the entries judged noise. The filtered-out list is what lets a reader disagree with the filter.
+
+## Separate failed media from alternative text
+
+A failed image request is a runtime defect even when its alternative is useful.
+Report it under `runtime:image-load` with route, resource, and observed effect.
+Add a separate `a11y-image-alt-text` finding only when the alternative itself is
+missing or wrong; do not treat an attribute as a fix for the failed resource.

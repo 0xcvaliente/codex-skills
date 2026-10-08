@@ -31,10 +31,10 @@ Install the packages relevant to your work. Several skills cover neighboring con
 | Skill | What it does | Typical result |
 |---|---|---|
 | [Repo Context](repo-context/README.md) | Navigates projects with compact notes, filename maps, and checks against recorded source evidence. | Updated project notes, a scoped inventory, and stale-evidence status. |
-| [Ponytail Codex](ponytail-codex/README.md) | Applies the smallest complete change, with lite/full/ultra levels, connected-code reviews, repository audits, and shortcut ledgers. | Focused implementation, prioritized findings, or counted `ponytail:` debt. |
+| [Ponytail Codex](ponytail-codex/README.md) | Applies the smallest complete change, with lite/full/ultra levels, connected-code reviews, repository audits, and shortcut ledgers. | Focused implementation, prioritized findings, or counted `shortcut:` and legacy `ponytail:` debt. |
 | [Pstack Codex](pstack-codex/README.md) | Adapts Poteto investigation, architecture, implementation, skeptical review, and runtime verification to Codex, with all upstream sources retained. | Evidence-grounded code, explanations, reviews, delivery plans, and optional configured Benny triage. |
 | [Codebase Design](codebase-design/README.md) | Designs deep modules with small interfaces and useful seams. | Interface proposals, design comparisons, and testable restructuring. |
-| [Domain Modeling](domain-modeling/README.md) | Resolves business terminology and records consequential tradeoffs. | A precise `CONTEXT.md` glossary and selective ADRs. |
+| [Domain Modeling](domain-modeling/README.md) | Resolves business terminology and records consequential tradeoffs. | A precise `GLOSSARY.md` (or existing `CONTEXT.md`) and selective ADRs. |
 
 Pstack Codex preserves all 164 files from pstack 0.15.15, including 27 workflows, 24 principles, 23 playbooks, agent definitions, the full guide, tools, and the optional Benny pack. One Codex entrypoint routes to native guidance and the complete pinned sources. The [package guide](pstack-codex/README.md), [workflow catalog](pstack-codex/references/catalog.md), and [runtime adaptation](pstack-codex/references/codex-runtime.md) explain invocation and capability limits. Original `SKILL.md` filenames are stored as `SKILL.md.source` to keep the source bundle from registering nested Cursor skills.
 

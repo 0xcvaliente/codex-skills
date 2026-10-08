@@ -67,6 +67,9 @@ A primary rule that the probe could not run for stays `unknown`. A confirming ru
 | `perf-virtualize-large-lists` | see below | confirming |
 | `slop-affordance-mismatch` | theme-locale-matrix | capture-only |
 | `slop-decoration-no-role` | theme-locale-matrix | capture-only |
+| `slop-invented-behaviour` | theme-locale-matrix | capture-only |
+| `slop-fact-padding` | theme-locale-matrix | capture-only |
+| `slop-external-arrow-internal-link` | focus-walk | confirming |
 | `slop-faux-product-chrome` | theme-locale-matrix | capture-only |
 | `slop-near-duplicate-scale` | theme-locale-matrix | capture-only |
 | `slop-token-drift` | theme-locale-matrix | capture-only |
@@ -91,7 +94,7 @@ Three rules are settled by a single evaluate call rather than a probe file. Run 
 
 ## What no probe decides
 
-The six `slop-` rules are aesthetic judgements against a threshold, and a measurement cannot make them. What the browser adds is the evidence they should have been judged on in the first place: `ui-design`'s Deslop scope already requires rendering at desktop and mobile before editing, because compounding slop is a visual property and reading JSX is the wrong evidence for it. This skill supplies those captures. It does not score them.
+The visual `slop-` rules require judgment against their own criteria. Product capability and repeated-fact checks require the brief and content; captures alone cannot decide them. Navigation cues can be confirmed by exercising the destination. A measurement cannot replace these source and semantic checks. What the browser adds is the evidence they should have been judged on in the first place: `ui-design`'s Deslop scope already requires rendering at desktop and mobile before editing, because compounding slop is a visual property and reading JSX is the wrong evidence for it. This skill supplies those captures. It does not score them.
 
 The same holds for the parts of a design no rule encodes: hierarchy, restraint, whether the dark theme looks intentional or merely inverted. Captures go in the report; the judgement stays where it was.
 

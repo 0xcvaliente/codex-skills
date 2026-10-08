@@ -176,3 +176,11 @@ Checks:
 
 1. **`states-layout-shift`**: loading placeholder has `min-height` matching loaded content. **fix-this-sprint.**
 2. **`async-no-suspense-boundary`**: server components / async streaming wrapped in `<Suspense fallback={...}>`. **fix-this-sprint.**
+
+## Product claims and page length
+
+For marketing pages, settings, onboarding, and newly created app shells, run
+`slop-invented-behaviour` against the brief and existing product. On long pages,
+run `slop-fact-padding` to check that each section adds information. For links
+with an external-destination cue, run `slop-external-arrow-internal-link` and
+`nav-semantic-links` against the actual route or fragment target.

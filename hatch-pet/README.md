@@ -58,4 +58,4 @@ preserving its approved standard animation rows.
 - [tests/](tests/): regression coverage for assembly, chroma processing, and directional QA policies.
 - [agents/openai.yaml](agents/openai.yaml) and [LICENSE.txt](LICENSE.txt): metadata and license text.
 
-See the [main README](../README.md) for installation and the [Imagegen snapshot guide](../.system/imagegen/README.md) for the generation workflow represented in this collection.
+See the [main README](../README.md) for installation and the [Imagegen snapshot guide](../.system/imagegen/SKILL.md) for the generation workflow represented in this collection.

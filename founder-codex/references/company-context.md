@@ -37,3 +37,12 @@ For material changes, reconcile affected downstream claims within scope. A new p
 The latest founder instruction controls scope. A recent reported metric supersedes an older report, but surface conflicts with measured records if they matter. Verbal approval, signed contracts, invoices, and collected cash are different evidence.
 
 Attach an as-of date to volatile facts. Refresh the fact needed for the decision, rather than requiring an audit of everything. Preserve dated sources when evaluating what was known at an earlier decision.
+
+## Reuse before asking
+
+Open the existing fact, pricing, or decision record relevant to the deliverable
+before requesting an input. Use accepted tiers in new copy; do not invent prices
+while the approved offer is saved. If the founder corrects a metric, state the
+old and new values and update the same project record when maintaining it is
+within scope. Retain the date/source and mark the earlier value superseded.
+Do not copy company facts into the globally installed skill.

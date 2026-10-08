@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "repository": "usestrix/strix",
-  "reviewed_commit": "278b6a280bfb458ef02187943df25ef8731e781f",
-  "reviewed_tree": "c3eb54c1a01a266a457d71db474edbb0082a0cdc",
+  "reviewed_commit": "f5a900416b6e1d8023e7c2ce11885232ffa8b806",
+  "reviewed_tree": "1ee8124cf2d6e9f7d6fcc619ad5f9b3bed391e06",
   "reviewed_default_branch": "main",
-  "reviewed_at": "2026-10-08",
+  "reviewed_at": "2026-10-09",
   "files": {
     ".github/ISSUE_TEMPLATE/bug_report.md": {
       "sha": "85919cefe8ec2acccfbc74c2692b1148b7dc87fd",
@@ -397,7 +397,7 @@
       "type": "blob"
     },
     "strix/agents/prompts/scope.jinja": {
-      "sha": "4211fd53ef171785524a2037d039147b33ccc39d",
+      "sha": "c9dc5c72253c7a4c933395b1b6fd5367b6c7c1d6",
       "mode": "100644",
       "type": "blob"
     },
@@ -422,12 +422,12 @@
       "type": "blob"
     },
     "strix/config/models.py": {
-      "sha": "b2d6f9d087fad81a96b5ab767a694c61f1399809",
+      "sha": "f36c1d9eb80799b6e64c87de520fad48430b3594",
       "mode": "100644",
       "type": "blob"
     },
     "strix/config/settings.py": {
-      "sha": "54243b744ca3e0a16d51027fc1740d071bdf51e3",
+      "sha": "5aa6da067eef222e114907d519a125917bc81ce8",
       "mode": "100644",
       "type": "blob"
     },
@@ -452,7 +452,7 @@
       "type": "blob"
     },
     "strix/core/execution.py": {
-      "sha": "508eccfef87ae2405f05bbf694d0b30903e0f619",
+      "sha": "5997e3dbee32de227f020dba891378d830330ba1",
       "mode": "100644",
       "type": "blob"
     },
@@ -472,7 +472,7 @@
       "type": "blob"
     },
     "strix/core/runner.py": {
-      "sha": "048a59decc5dcda0bed27ee81cc2c2d37fed97fe",
+      "sha": "58124be26038935f9499df4ef98962b5b6cce35a",
       "mode": "100644",
       "type": "blob"
     },
@@ -1402,7 +1402,7 @@
       "type": "blob"
     },
     "strix/llm/request_log.py": {
-      "sha": "84dd890d4c545fab7717e9fb2f57242a08f15ece",
+      "sha": "eda0d222ed9b87ea0a9f5e41b5465428795e7a4a",
       "mode": "100644",
       "type": "blob"
     },
@@ -1987,7 +1987,7 @@
       "type": "blob"
     },
     "strix/tools/mcp/agent_tools.py": {
-      "sha": "7fa2c3928de7ca15c022a7fef13f826ae3b308f8",
+      "sha": "1033d3349579320b6696833eb310b812056e0b54",
       "mode": "100644",
       "type": "blob"
     },
@@ -2017,7 +2017,7 @@
       "type": "blob"
     },
     "strix/tools/mcp/registry.py": {
-      "sha": "65652ab105ac2bf2e3262564e833c7ed77c3c937",
+      "sha": "6e87c958bf75a187f24dcdf0425a65f6140fbf06",
       "mode": "100644",
       "type": "blob"
     },
@@ -2302,7 +2302,7 @@
       "type": "blob"
     },
     "tests/test_cost_tracking.py": {
-      "sha": "6a2f81a38eaa3375c06237d2e0a02a1796661002",
+      "sha": "572143eb128cdbd9d3cb8fcb1f17b909416858e2",
       "mode": "100644",
       "type": "blob"
     },
@@ -2347,7 +2347,7 @@
       "type": "blob"
     },
     "tests/test_execution_transient_retry.py": {
-      "sha": "57b26db321f2398130884bedd981d7f9c7fa225d",
+      "sha": "f027693248ffb9af37626b7feb5b11f8262cd8fa",
       "mode": "100644",
       "type": "blob"
     },
@@ -2397,7 +2397,7 @@
       "type": "blob"
     },
     "tests/test_llm_request_log.py": {
-      "sha": "d82c2e88905acf81f3173514a141f4489c80bdce",
+      "sha": "41bbc8843412def71f5ab3fb57b01a6438fdd9b2",
       "mode": "100644",
       "type": "blob"
     },
@@ -2412,7 +2412,7 @@
       "type": "blob"
     },
     "tests/test_mcp_client.py": {
-      "sha": "56b96887fe1917523ea54a2d3999b22c478c32c5",
+      "sha": "fcbac3745f1bd1a8f278a77b8108c15daa8c5368",
       "mode": "100644",
       "type": "blob"
     },
@@ -2517,7 +2517,7 @@
       "type": "blob"
     },
     "tests/test_runner_mcp.py": {
-      "sha": "25a5c888d14b3a7dc10bf484a70491cbd2a369ff",
+      "sha": "62d6fab191f4f587ab2c93beef9b3a8df995b630",
       "mode": "100644",
       "type": "blob"
     },
@@ -2527,7 +2527,7 @@
       "type": "blob"
     },
     "tests/test_runner_root_prompt.py": {
-      "sha": "e25d09ab69cd487ae05cec1a1e321a6dc9a4a58d",
+      "sha": "a564a3ea1b418e1eb13c9e9c7f7e727cd665b639",
       "mode": "100644",
       "type": "blob"
     },
@@ -2577,7 +2577,7 @@
       "type": "blob"
     },
     "tests/test_stream_idle_timeout.py": {
-      "sha": "9d618978fd63ee65dc4ffe612d0c55bad0be9d80",
+      "sha": "f45035bf140e7fcbb538f90bba5d3ae866ff2f06",
       "mode": "100644",
       "type": "blob"
     },
@@ -2706,5 +2706,6 @@
       "mode": "100644",
       "type": "blob"
     }
-  }
+  },
+  "default_branch": "main"
 }

@@ -113,8 +113,8 @@ Do not reintroduce a second rules folder. A rule that needs the browser says so 
 
 **Impact:** MEDIUM
 **Default tier:** backlog
-**Rules:** 6
-**Description:** The house style of machine-generated interfaces: default-everything spacing, stock gradient hero, emoji as iconography, filler copy shipped as real copy, and the other tells that make a screen read as unfinished rather than broken. Nothing here blocks a task, which is why it defaults to backlog, but it is what a reviewer means by "this looks AI-made."
+**Rules:** 9
+**Description:** The house style of machine-generated interfaces: default-everything spacing, stock gradient hero, emoji as iconography, filler copy shipped as real copy, and the other tells that make a screen read as unfinished rather than broken. Visual cleanup defaults to backlog; unsupported product capabilities default to fix-this-sprint because they create false expectations. Use each rule’s own evidence and tier rather than treating all findings as aesthetic.
 
 ---
 
@@ -126,4 +126,9 @@ These pairings often co-fire. Emit both findings with the same `surface` to make
 
 ---
 
-Total: 52 rules across 14 categories.
+Total: 55 rules across 14 categories.
+
+New static checks in the `slop` category: `slop-invented-behaviour`,
+`slop-fact-padding`, and `slop-external-arrow-internal-link`. Product capability
+claims require the brief or existing product as evidence; the remaining visual
+judgments still require rendered inspection.

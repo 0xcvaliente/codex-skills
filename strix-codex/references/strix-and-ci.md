@@ -55,3 +55,14 @@ For GitHub Actions, author the gate around these observable conditions:
 7. Upload SARIF only where supported with least-privilege permissions; mark the job as a required check only if repository-setting changes are authorized.
 
 For managed PR reviews, use an already authorized integration or scoped token and poll the specific review to its terminal state. Trigger success alone does not establish scan success. Validate YAML, event behavior, artifact association, and the error/incomplete paths locally or with a safe fixture before publishing the configuration.
+
+## Engine timeout and connection diagnostics
+
+For the actual Strix engine, the reviewed revision distinguishes first-event,
+idle-between-events, and total-stream timeouts. Check the installed version before
+using `LLM_STREAM_FIRST_EVENT_TIMEOUT`, `LLM_STREAM_IDLE_TIMEOUT`, or
+`LLM_STREAM_TOTAL_TIMEOUT`; zero disables the corresponding bound in this version.
+A timeout or unavailable MCP catalog limits coverage. Inspect the run's status and
+sanitized error/provider details before retrying or changing limits; do not turn
+an incomplete attempt into a clean security result. These are Strix settings,
+not Codex settings, and this instruction package does not change either runtime.

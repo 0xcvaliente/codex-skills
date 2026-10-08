@@ -1,8 +1,8 @@
 # Source and adaptation
 
-Reviewed on **2026-10-08** from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail),
-package version **5.0.0**, commit
-[`b088b2df6e08d4306c6a3c3d575fe38c2d2d2989`](https://github.com/DietrichGebert/ponytail/tree/b088b2df6e08d4306c6a3c3d575fe38c2d2d2989).
+Reviewed on **2026-10-09** from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail),
+package version **5.1.0**, commit
+[`9cc65d03aa2da1db7121b912d03596409ee340b8`](https://github.com/DietrichGebert/ponytail/tree/9cc65d03aa2da1db7121b912d03596409ee340b8).
 
 The README was inspected using Obscura. The pinned source was cloned and read
 to verify the actual skill instructions, adapters, license, and benchmark caveats.
@@ -50,3 +50,11 @@ pinned sources when deliberately maintaining the adaptation.
 The upstream MIT copyright and license are retained in [LICENSE](../LICENSE).
 This adaptation is distributed under those terms. No upstream affiliation or
 endorsement is claimed.
+
+## Reviewed update — 2026-10-09
+
+Reviewed the changes from `b088b2df6e08d4306c6a3c3d575fe38c2d2d2989` to
+`9cc65d03aa2da1db7121b912d03596409ee340b8` (upstream 5.1.0). New comments use
+`shortcut:`; debt/review routes retain legacy `ponytail:` support, accept a
+user-selected marker, and exclude keyboard shortcut notes. Project choices
+remain authoritative. No hooks, telemetry, or model settings were imported.

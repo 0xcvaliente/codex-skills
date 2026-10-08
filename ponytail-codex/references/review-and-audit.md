@@ -43,8 +43,8 @@ single-user script merely because it could someday have more users.
 
 Before reporting, re-read the exact code and establish a concrete trigger,
 mechanism, and consequence. Check dynamic references, exports, configuration,
-tests, and fixtures before calling code unused. A documented `ponytail:`
-ceiling is a conscious decision unless current requirements or load exceed
+tests, and fixtures before calling code unused. A documented `shortcut:`
+(or legacy `ponytail:`) ceiling is a conscious decision unless current requirements or load exceed
 it. Reject style-only preferences and hypothetical scaling worries.
 
 ## Report

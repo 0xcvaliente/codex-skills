@@ -52,3 +52,13 @@ Resolve the intended merge base from the PR or repository's real default branch.
 Review changed code with its callers, authorization middleware, shared storage queries, serializers, tests, and configuration. Diff scope sets the entrypoints for reasoning; it does not imply guards outside the diff are correct. State the baseline and any excluded files in the report.
 
 Finish using [evidence, reports, and fixes](reporting-and-fixes.md). Test depth and runtime availability control the confidence claim, not whether the write-up sounds complete.
+
+## Connection evidence
+
+When an available authorized connector can establish deployment configuration,
+schema, access policies, or prior findings, use its authoritative read capability
+for the relevant hypothesis. A configured connection is not proof that its tool
+catalog loaded. Distinguish loading, ready, unavailable, and an actually empty
+catalog; unknown counts must not become zero. Continue source review when a
+connection fails and record the resulting proof gap. Use actual Codex capabilities
+rather than assuming Strix-specific MCP discovery tools exist.

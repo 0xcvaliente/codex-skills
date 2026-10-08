@@ -1,7 +1,7 @@
 # Ponytail Codex
 
 The smallest complete change, packaged as a standalone Codex skill. Adapted
-from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) 5.0.0.
+from [DietrichGebert/ponytail](https://github.com/DietrichGebert/ponytail) 5.1.0.
 
 Codex reads the task and connected code, reuses what the project already has,
 and chooses the simplest implementation that meets the requirements. It keeps
@@ -19,7 +19,7 @@ as opportunities to remove unnecessary code.
 | `ultra` | Also challenges unnecessary scope while honoring explicit requirements. |
 | `review` | Prioritized findings for a diff, branch, PR, commit, or named files, including connected callers. |
 | `audit` | Repository or package assessment with explicit coverage and workload assumptions. |
-| `debt` | Counted ledger of actual `ponytail:` shortcut comments, including missing revisit triggers. |
+| `debt` | Counted ledger of `shortcut:`, legacy `ponytail:`, or user-selected deferral comments, including missing revisit triggers. |
 | `gain` | Attributed upstream benchmark figures and limitations; no claim of measured Codex savings. |
 | `help` / `off` | Usage guidance, or stop applying the skill in the current chat. |
 
@@ -102,6 +102,6 @@ performance. This adaptation has not been independently benchmarked in Codex.
 
 Distributed under the retained upstream [MIT license](LICENSE), copyright
 2026 DietrichGebert. Reviewed source revision:
-[`b088b2df6e08d4306c6a3c3d575fe38c2d2d2989`](https://github.com/DietrichGebert/ponytail/tree/b088b2df6e08d4306c6a3c3d575fe38c2d2d2989),
-2026-10-08. See [provenance](references/provenance.md) for inspected sources and
+[`9cc65d03aa2da1db7121b912d03596409ee340b8`](https://github.com/DietrichGebert/ponytail/tree/9cc65d03aa2da1db7121b912d03596409ee340b8),
+2026-10-09. See [provenance](references/provenance.md) for inspected sources and
 adaptation choices. No affiliation or endorsement is claimed.

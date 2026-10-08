@@ -11,7 +11,7 @@ Turn a founder's business question into a defensible decision and a usable resul
 
 ## Start from the actual request
 
-Use the conversation and relevant project artifacts before asking questions. Check for existing `FOUNDER_CONTEXT.md`, `founder/context.md`, `founder/facts.md`, `.agents/product-marketing.md`, or `.claude/product-marketing.md`; read the relevant ones rather than scanning private folders. The founder's latest correction supersedes older context. Website copy and code demonstrate what is presented or implemented, not verified customer demand or business performance.
+Use the conversation and relevant project artifacts before asking questions. Check for existing `FOUNDER_CONTEXT.md`, `founder/context.md`, `founder/facts.md`, `.agents/product-marketing.md`, or `.claude/product-marketing.md`; read the relevant ones rather than scanning private folders. Read saved facts, accepted prices, and relevant prior decisions before asking for them. The founder's latest correction supersedes older context; identify the replaced value and reconcile the existing record within the task's scope. Website copy and code demonstrate what is presented or implemented, not verified customer demand or business performance.
 
 If they request a specific deliverable, complete it directly. Diagnose first only when the request is broad or its proposed fix depends on an uncertain cause. Ask for information that would materially change the work, and continue independent work while awaiting it. Missing private numbers stay unknown; proposed scenarios can proceed with labeled assumptions. A copy request does not require a full business audit.
 

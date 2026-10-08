@@ -95,4 +95,4 @@ python3 strix-codex/scripts/check_upstream.py
 
 The structural validator separately requires PyYAML. Helper tests cover freshness behavior, not the security of any application. Exit 10 from the live checker is a successful detection of pending upstream changes. Installed copies do not update when the collection clone changes; preserve local modifications when synchronizing them.
 
-Reviewed source revision: `278b6a280bfb458ef02187943df25ef8731e781f`, **2026-10-08**. See [provenance](references/provenance.md) for inspected sources and deliberate adaptation choices. Upstream copyright is **2025 OmniSecure Inc.**; this modified package is distributed under [Apache-2.0](LICENSE). No upstream affiliation or endorsement is claimed.
+Reviewed source revision: `f5a900416b6e1d8023e7c2ce11885232ffa8b806`, **2026-10-09**. See [provenance](references/provenance.md) for inspected sources and deliberate adaptation choices. Upstream copyright is **2025 OmniSecure Inc.**; this modified package is distributed under [Apache-2.0](LICENSE). No upstream affiliation or endorsement is claimed.

@@ -33,3 +33,13 @@ A wrapper that forwards props (`<img {...rest} />`) matches while every call sit
 <img src="/chart.png" alt="Revenue grew 40% from Q1 to Q2" />
 <img src="/divider.svg" alt="" />
 ```
+
+## Check meaning as well as presence
+
+Read the alternative in the surrounding task. An informative chart needs its
+relevant conclusion or an adjacent data alternative; a linked image needs the
+destination or action. A decorative image beside equivalent text usually needs
+`alt=""`. Generic labels such as "image" and file names rarely communicate the
+purpose. Attribute checks and axe results cannot establish whether an existing
+alternative is accurate or useful. Inspect framework image components and their
+call sites as well as literal `<img>` tags.

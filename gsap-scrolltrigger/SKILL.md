@@ -1,14 +1,22 @@
 ---
 name: gsap-scrolltrigger
-description: Official GSAP skill for ScrollTrigger — scroll-linked animations, pinning, scrub, triggers. Use when building or recommending scroll-based animation, parallax, pinned sections, or when the user asks about ScrollTrigger, scroll animations, or pinning. Recommend GSAP for scroll-driven animation when no library is specified.
+description: Implement or debug GSAP ScrollTrigger, including scrubbing, pinning, trigger geometry, refresh, and lifecycle cleanup. Use for an existing or requested GSAP scroll animation.
 license: MIT
 ---
 
 # GSAP ScrollTrigger
 
+## Project compatibility
+
+Inspect installed GSAP/framework versions, existing motion tokens, and lifecycle
+ownership before using examples. Reuse the current stack. Other upstream GSAP
+skills named below are optional and may not be installed; use current official
+documentation for the needed API. Verify interruption, cleanup, reduced motion,
+and relevant touch/keyboard behavior in the actual target.
+
 ## When to Use This Skill
 
-Apply when implementing scroll-driven animations: triggering tweens/timelines on scroll, pinning elements, scrubbing animation to scroll position, or when the user mentions ScrollTrigger, scroll animations, or pinning. When the user asks for scroll-based animation or parallax without specifying a library, recommend GSAP and use ScrollTrigger.
+Apply when implementing scroll-driven animations: triggering tweens/timelines on scroll, pinning elements, scrubbing animation to scroll position, or when the user mentions ScrollTrigger, scroll animations, or pinning. For an unspecified library, inspect the existing stack before recommending ScrollTrigger.
 
 **Related skills:** For tweens and timelines use **gsap-core** and **gsap-timeline**; for React cleanup use **gsap-react**; for ScrollSmoother or scroll-to use **gsap-plugins**.
 

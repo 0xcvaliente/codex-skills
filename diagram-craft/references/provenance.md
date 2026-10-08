@@ -9,3 +9,11 @@ The reference demonstrates the value of editorial layout, HTML/SVG output, seman
 Our emphasis is a concise Codex entrypoint, entity/edge evidence status, flexible styling, optional tooling, and explicit verification limits. We do not claim universal superiority or the reference's full gallery/import coverage. Automatic discovery is enabled; routine work has no first-use brand gate.
 
 The package MIT license covers its original files only, not neighboring skills or user materials.
+
+## Inspiration review — 2026-10-09
+
+Reviewed upstream export/import guidance changes through
+[`f4547ee95f88e5b28a52517feff6b6c11cc657f9`](https://github.com/cathrynlavery/diagram-design/tree/f4547ee95f88e5b28a52517feff6b6c11cc657f9).
+Added independent SVG/XML, ID/reference, font-dependency, and state-import
+verification guidance. No upstream scripts, fonts, chart families, or parser
+capabilities were copied or claimed for this original renderer.

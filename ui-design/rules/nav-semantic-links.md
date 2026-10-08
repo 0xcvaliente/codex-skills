@@ -31,3 +31,12 @@ A card wrapper that widens the hit area around a real nested `<a>` or `<Link>` i
 ```tsx
 <Link href="/settings">Settings</Link>
 ```
+
+## Confirm the destination
+
+A semantic link can still be dead. Trace `href="#"`, empty destinations, missing
+fragment IDs, and placeholder routes through the actual rendered page. Exercise
+primary CTAs: a button labeled "Start trial" that only jumps to a repeated CTA
+with no signup path does not complete its stated action. Preserve legitimate
+same-page navigation and project routing conventions. Use a button for a local
+action rather than a fake link, and do not invent a missing destination.

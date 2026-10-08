@@ -7,6 +7,10 @@ description: Use the Figma MCP server to fetch design context, screenshots, vari
 
 Use the Figma MCP server for Figma-driven implementation. For setup and debugging details (env vars, config, verification), see `references/figma-mcp-config.md`.
 
+## Installed Figma plugin routing
+
+Before calling `get_design_context`, read the installed `figma:figma-design-to-code` skill when available. Before calling `use_figma`, read `figma:figma-use`. Resolve companion skills by their installed names rather than assuming sibling folders in this personal skill directory; use `figma:figma-code-connect` for Code Connect. Preserve the project's own components and tokens.
+
 ## Figma MCP Integration Rules
 These rules define how to translate Figma inputs into code for this project and must be followed for every Figma-driven change.
 

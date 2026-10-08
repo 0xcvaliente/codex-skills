@@ -33,7 +33,7 @@ The audit has documented severity and output schemas, including a stable `ui-aud
 
 The package has no application runtime or component library. Implementation uses the target project's React, Next.js, or Tailwind environment. Browser access is needed for rendered claims, state exercises, and visual captures.
 
-[UI Verification](../ui-verification/README.md) owns measurement and evidence collection. [UI Animation](../ui-animation/README.md) owns timing and gestures. References to `product-design`, `tidy`, `ax-audit`, `typography-audit`, `ghostwriter`, and `seo` concern external skills that are not bundled here. Raster dark-mode work can require the [Imagegen snapshot](../.system/imagegen/README.md) or its installed equivalent.
+[UI Verification](../ui-verification/README.md) owns measurement and evidence collection. [UI Animation](../ui-animation/README.md) owns timing and gestures. References to `product-design`, `tidy`, `ax-audit`, `typography-audit`, `ghostwriter`, and `seo` concern external skills that are not bundled here. Raster dark-mode work can require the [Imagegen snapshot](../.system/imagegen/SKILL.md) or its installed equivalent.
 
 ## Example requests
 

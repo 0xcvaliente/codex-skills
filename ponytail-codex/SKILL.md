@@ -4,7 +4,7 @@ description: >-
   Apply Ponytail's smallest-complete-change approach to Codex coding tasks,
   bug fixes, refactors, dependency choices, and over-engineering reviews.
   Also handles Ponytail lite/full/ultra modes, change reviews, repository
-  audits, and ponytail: shortcut ledgers. Use for "ponytail", "simplest
+  audits, and shortcut ledgers. Use for "ponytail", "simplest
   solution", "YAGNI", or reducing code bloat. Does not activate for unrelated
   prose or creative work.
 license: MIT
@@ -26,7 +26,7 @@ the workflow; they are instructions, not executable slash commands.
 | A coding task, optionally `lite`, `full`, or `ultra` | Apply the coding workflow below. Default to `full`. |
 | `review` with a diff, branch, PR, or files | Read [review and audit](references/review-and-audit.md), then report on that change. |
 | `audit` with a repository or folder | Read [review and audit](references/review-and-audit.md), then assess the named scope. |
-| `debt` or "list the shortcuts" | Read [shortcut ledger](references/debt.md). |
+| `debt`, `debt <marker>`, or "list the shortcuts" | Read [shortcut ledger](references/debt.md). |
 | `gain` or "what does Ponytail save?" | Read [benchmark context](references/benchmark.md). Attribute the published figures and their limits. |
 | `help` | Explain this table and the levels briefly, using `$ponytail-codex` examples. |
 | `off`, "stop ponytail", or "normal mode" | Stop applying this skill in the current chat until the user resumes it. |
@@ -81,7 +81,9 @@ tests that merely repeat the implementation need no new test. Report a check
 that could not run accurately; do not call it passed.
 
 A deliberate shortcut with a known ceiling gets a comment in the project's
-syntax: `ponytail: <limit>; revisit when <trigger>; upgrade by <smallest next step>`.
+syntax: `shortcut: <limit>; revisit when <trigger>; upgrade by <smallest next step>`.
+Honor an existing project marker or a request to omit these comments; older
+`ponytail:` markers remain valid.
 Record only actual accepted limits. A shortcut cannot waive a requirement or
 a necessary safety control.
 

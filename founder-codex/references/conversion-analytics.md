@@ -31,3 +31,23 @@ Precommit the stopping rule. A fixed-horizon test should not stop early merely b
 First-touch, last-touch, linear, and time-decay models allocate observed credit; they do not prove incrementality. State identity matching, tracking loss, lookback window, model, excluded traffic, cost allocation, and distinction between pipeline, booked revenue, and collected cash. Use randomized or defensible quasi-experimental evidence for causal lift claims.
 
 After an intervention, read back the same metric/cohort/window and exact artifact version. Separate campaign, list, spend, and product changes. Record keep, revise, rollback, or unproven with the observation supporting it. Do not automatically generalize a result or schedule a monitor without the user's request.
+
+## Interpret the analysis correctly
+
+For a planned fixed-horizon test, a p-value measures how incompatible the data
+are with the null model under its assumptions. It is not the probability the
+result is random or the null hypothesis is true. A confidence interval describes
+a repeated-sampling procedure, not a posterior probability for this one interval.
+Report effect size, uncertainty, guardrails, and practical value together. After
+an inconclusive finished test, do not keep collecting until significance appears;
+interpret the effect interval and plan a new test if needed. Treat unplanned
+segments as exploratory.
+
+Keep real conversions in one deduplicated outcome ledger; report platform credit
+and attribution windows separately. A large direct/branded share may include
+repeat customers, genuine direct visits, and tracking loss. Verify its composition
+before claiming either a broken measurement system or successful acquisition.
+
+Provider-defined automatic/recommended event names must retain their required
+names and payloads. Map internal business names explicitly; a renamed custom
+event does not become automatically collected merely because its meaning matches.

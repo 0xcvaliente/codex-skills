@@ -56,3 +56,12 @@ Anything not in the table keeps its axe id under `axe:<id>`. Do not invent a rul
 ## Evidence to write
 
 The raw axe results JSON per route and theme (`axe-<route>-<theme>.json`), the violation count by impact, and a capture of the theme that failed. Keep `incomplete` entries in the file; they are the queue for a human.
+
+## Semantic review after the scan
+
+Passing name and alternative-text checks proves presence, not accuracy. Inspect
+the accessible name and image alternative in context: describe the action of an
+icon control, the destination of a linked image, and the information conveyed by
+an informative chart. Decorative images with redundant descriptions should be
+silent. Record what was reviewed manually; a clean automated scan alone cannot
+confirm `a11y-image-alt-text` or useful control names.

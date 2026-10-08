@@ -6,13 +6,13 @@ Reviewed: 2026-10-07. Revisions below pin the material actually inspected; sourc
 
 | Repository and representative source | Revision | License | Ideas adapted |
 |---|---|---|---|
-| [emotixco/claude-skills-founder](https://github.com/emotixco/claude-skills-founder) · [reviewed source](https://github.com/emotixco/claude-skills-founder/blob/d9c930e87b2d6735ccfb93fd59ecf8ec2e50a8b6/skills/validate-idea/SKILL.md) | `d9c930e87b2d6735ccfb93fd59ecf8ec2e50a8b6` | [MIT](../licenses/emotixco--claude-skills-founder.txt) | Shared dated facts, practical founder artifacts, validation and MVP scoping. |
+| [emotixco/claude-skills-founder](https://github.com/emotixco/claude-skills-founder) · [reviewed source](https://github.com/emotixco/claude-skills-founder/blob/0602cad0520e4d8cb165bb1c779d7010cfbc5b45/skills/validate-idea/SKILL.md) | `0602cad0520e4d8cb165bb1c779d7010cfbc5b45` | [MIT](../licenses/emotixco--claude-skills-founder.txt) | Shared dated facts, practical founder artifacts, validation and MVP scoping. |
 | [Varnan-Tech/opendirectory](https://github.com/Varnan-Tech/opendirectory) · [reviewed source](https://github.com/Varnan-Tech/opendirectory/blob/62e437ab13408171805a87d16f5cb0151f96ea3c/skills/where-your-customer-lives/SKILL.md) | `62e437ab13408171805a87d16f5cb0151f96ea3c` | [MIT](../licenses/Varnan-Tech--opendirectory.txt) | Traceable public demand signals, customer-channel discovery, comparable competitor pricing and launch assets. |
 | [anthropics/launch-your-agent](https://github.com/anthropics/launch-your-agent) · [reviewed source](https://github.com/anthropics/launch-your-agent/blob/d5d0ffbca3abe857478165a7c48f4cfc39a50920/.claude/skills/launch-your-agent/SKILL.md) | `d5d0ffbca3abe857478165a7c48f4cfc39a50920` | [Apache-2.0](../licenses/anthropics--launch-your-agent.txt) | End-to-end first version, outcome rubrics, representative cases, iteration, and honest connector boundaries. |
 | [Jakeschincariol/founder-skill](https://github.com/Jakeschincariol/founder-skill) · [reviewed source](https://github.com/Jakeschincariol/founder-skill/blob/fd9385b0cfe1b96bebce3898fbd506d73eff5a9d/skills/founder-cfo/SKILL.md) | `fd9385b0cfe1b96bebce3898fbd506d73eff5a9d` | [MIT](../licenses/Jakeschincariol--founder-skill.txt) | Distinct business lenses, contribution/capacity/cash reasoning, offer and operating dependencies. |
 | [getagentseal/founder-playbook](https://github.com/getagentseal/founder-playbook) · [reviewed source](https://github.com/getagentseal/founder-playbook/blob/e811e63be42c9b64a208707220b145451ad4b6c8/skills/diagnose/SKILL.md) | `e811e63be42c9b64a208707220b145451ad4b6c8` | [MIT](../licenses/getagentseal--founder-playbook.txt) | Constraint diagnosis, customer-development and pricing frameworks, channel experiments, explicit limits and framework tradeoffs. |
 | [ognjengt/founder-skills](https://github.com/ognjengt/founder-skills) · [reviewed source](https://github.com/ognjengt/founder-skills/blob/a45931cad934dc6243a68f905485467935a4ad9a/FOUNDER_CONTEXT.md) | `a45931cad934dc6243a68f905485467935a4ad9a` | [MIT](../licenses/ognjengt--founder-skills.txt) | Shared founder context, executable growth moves, implementation-ready product briefs, CRO and copy deliverables. |
-| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) · [reviewed source](https://github.com/coreyhaines31/marketingskills/blob/5e721d73ac85be8ba917d6a9ca9cb5bc98f02b80/skills/product-marketing/SKILL.md) | `5e721d73ac85be8ba917d6a9ca9cb5bc98f02b80` | [MIT](../licenses/coreyhaines31--marketingskills.txt) | Product marketing context, focused CRO, behavioral onboarding/retention, rigorous A/B testing, search discovery, and revenue handoffs. |
+| [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) · [reviewed source](https://github.com/coreyhaines31/marketingskills/blob/1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff/skills/product-marketing/SKILL.md) | `1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff` | [MIT](../licenses/coreyhaines31--marketingskills.txt) | Product marketing context, focused CRO, behavioral onboarding/retention, rigorous A/B testing, search discovery, and revenue handoffs. |
 | [ericosiu/ai-marketing-skills](https://github.com/ericosiu/ai-marketing-skills) · [reviewed source](https://github.com/ericosiu/ai-marketing-skills/blob/8088e1a167804d5615f6e982f62e5b4b6ff8f2f1/revenue-intelligence/SKILL.md) | `8088e1a167804d5615f6e982f62e5b4b6ff8f2f1` | [MIT](../licenses/ericosiu--ai-marketing-skills.txt) | Experiment/result records, editorial quality review, finance-export analysis, transcript insights, revenue readback, and measured playbook updates. |
 
 ## Deliberate changes
@@ -33,3 +33,19 @@ Copyright notices and full upstream license texts are retained in `../licenses/`
 ## Maintenance
 
 Refresh only the source or platform details needed for a demonstrated improvement. Keep the pinned revision and adaptation rationale current when changing source-derived guidance. Prefer changes supported by actual usage to copying growing upstream catalogs. Verify finance behavior after arithmetic/schema changes, and evaluate a realistic request after substantial workflow changes.
+
+## Reviewed update — 2026-10-09
+
+Rechecked all eight source repository heads. Six retained their reviewed revision.
+Reviewed the Founder source's conventions/changelog and new saved-fact/pricing
+regression cases at `0602cad0520e4d8cb165bb1c779d7010cfbc5b45`; retained context
+reuse and explicit correction history. Its model-specific evaluation scores are
+not claimed for Codex.
+
+Reviewed Marketing Skills at `1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff`, focusing
+on A/B testing and sample-size interpretation, analytics, attribution, AI SEO,
+content refresh, and sales enablement. Adopted statistical and event-contract
+corrections, outcome/credit separation, saved-price continuity, and scoped search
+refresh/visibility guidance. This is a selective adaptation review; new paid-ad,
+outbound, affiliate, and lead-magnet catalogs were not installed wholesale.
+Source licenses remain unchanged.

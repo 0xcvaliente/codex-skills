@@ -39,6 +39,7 @@ Use the sections relevant to the requested surface. These are decision prompts, 
 - Destructive actions require a proportionate confirmation or a reliable undo window.
 - Optimistic updates need rollback or reconciliation on failure.
 - Preserve browser Back/Forward behavior and expected scroll restoration.
+- Scope overscroll suppression to the actual modal or scroll region. Suppressing page overscroll can also remove pull-to-refresh, scroll chaining, and native swipe navigation. If explicitly required for desktop, test hybrid touch devices; `pointer: fine` describes the primary input, not the absence of touch.
 - Avoid autofocus on mobile; use it on desktop only when one obvious primary input benefits.
 - Tooltips supplement rather than replace essential labels or instructions.
 
@@ -112,4 +113,6 @@ Explain non-obvious corrections, interactions among findings, and any result tha
 
 ## Provenance
 
-This checklist is a hardened local adaptation of Vercel Labs' MIT-licensed Web Interface Guidelines, reviewed at commit `e3d624baaf29dc1fc645aff3e38f03e564d2d6b1`. It intentionally removes runtime remote fetching and narrows several brand-specific or overly absolute rules.
+This checklist is a hardened local adaptation of Vercel Labs' MIT-licensed Web Interface Guidelines, reviewed at commit `434b7f91364665f2f733b310ec54809bf8f37937`. It intentionally removes runtime remote fetching and narrows several brand-specific or overly absolute rules.
+
+Reviewed 2026-10-09 against [vercel-labs/web-interface-guidelines](https://github.com/vercel-labs/web-interface-guidelines/tree/434b7f91364665f2f733b310ec54809bf8f37937). The upstream desktop overscroll addition is applied conditionally to preserve native navigation and touch behavior.

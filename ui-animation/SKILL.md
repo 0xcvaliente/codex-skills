@@ -249,3 +249,13 @@ Interface SFX gating taken from Craft (gustavo-fior) and Raphael Salaja's web-so
 - Optional external `animate-text` skill where installed: curated named text effects (typewriter, line reveal, stagger builds) with exact JSON specs.
 
 Maintenance only: `evals/evals.json` contains regression scenarios for changes to this skill; it does not load during a user task.
+
+## Reduced motion in JavaScript
+
+A CSS media query does not automatically change animations driven by JavaScript.
+Inspect the library and version already installed, then use its supported
+reduced-motion policy or a `matchMedia` listener with cleanup. In Motion, inspect
+the existing `MotionConfig` / `useReducedMotion` usage before adding a policy.
+Keep changes scoped to the requested surface and preserve essential state
+feedback. Verify both the initial preference and preference changes while open;
+check that spatial travel and decorative loops stop as intended.

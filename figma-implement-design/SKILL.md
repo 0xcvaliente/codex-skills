@@ -5,6 +5,10 @@ description: Translates Figma designs into production-ready application code wit
 
 # Implement Design
 
+## Installed Figma plugin routing
+
+Before calling `get_design_context`, read the installed `figma:figma-design-to-code` skill when available. Before calling `use_figma`, read `figma:figma-use`. Resolve companion skills by their installed names rather than assuming sibling folders in this personal skill directory; use `figma:figma-code-connect` for Code Connect. Preserve the project's own components and tokens.
+
 ## Overview
 
 This skill provides a structured workflow for translating Figma designs into production-ready code with pixel-perfect accuracy. It ensures consistent integration with the Figma MCP server, proper use of design tokens, and 1:1 visual parity with designs.
@@ -12,9 +16,9 @@ This skill provides a structured workflow for translating Figma designs into pro
 ## Skill Boundaries
 
 - Use this skill when the deliverable is code in the user's repository.
-- If the user asks to create/edit/delete nodes inside Figma itself, switch to [figma-use](../figma-use/SKILL.md).
-- If the user asks to build or update a full-page screen in Figma from code or a description, switch to [figma-generate-design](../figma-generate-design/SKILL.md).
-- If the user asks only for Code Connect mappings, switch to [figma-code-connect-components](../figma-code-connect-components/SKILL.md).
+- If the user asks to create/edit/delete nodes inside Figma itself, switch to `figma:figma-use`.
+- If the user asks to build or update a full-page screen in Figma from code or a description, switch to `figma:figma-generate-design`.
+- If the user asks only for Code Connect mappings, switch to `figma:figma-code-connect`.
 - If the user asks to author reusable agent rules (`CLAUDE.md`/`AGENTS.md`), switch to [figma-create-design-system-rules](../figma-create-design-system-rules/SKILL.md).
 
 ## Prerequisites

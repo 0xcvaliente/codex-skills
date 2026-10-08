@@ -56,3 +56,19 @@ State checks actually performed and material limits. For example:
 > Checked scene references and route bounds; inspected desktop and 390 px views; compared seven relationships with the supplied design; inspected exported SVG. Deployment region is an assumption. Runtime behavior was not observed.
 
 If an export failed, return working source and explain the specific missing output.
+
+## Standalone export checks
+
+Parse a delivered SVG as XML and inspect that file independently from its HTML
+companion. HTML-only named entities, valueless attributes, or unquoted values
+may fail XML parsing. Preserve title/description references, internal links,
+CSS selectors, marker references, and accessible names when namespacing IDs.
+Exercise two embedded figures when changing ID rewriting. External fonts and
+assets must be resolved or disclosed; browser appearance in the source page
+alone does not prove a portable SVG.
+
+When redrawing imports, keep displayed state names separate from stable IDs,
+retain repeated state-description lines and composite membership, and retain
+connector labels and explicit direction even if geometry changes. Unsupported
+syntax is a recorded gap rather than silently discarded semantics. These checks
+do not add universal Mermaid/draw.io conversion to the bundled helper.
