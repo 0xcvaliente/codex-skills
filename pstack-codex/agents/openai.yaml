@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pstack Codex"
+  short_description: "Rigorous pstack engineering workflows for Codex"
+  default_prompt: "Use $pstack-codex to investigate, implement, and verify this task with the matching playbook."

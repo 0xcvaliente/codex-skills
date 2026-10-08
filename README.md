@@ -4,7 +4,7 @@
 
 This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create explanatory diagrams and 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
 
-The collection currently contains **28 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
+The collection currently contains **29 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
 ## What this repository provides
 
@@ -32,8 +32,11 @@ Install the packages relevant to your work. Several skills cover neighboring con
 |---|---|---|
 | [Repo Context](repo-context/README.md) | Navigates projects with compact notes, filename maps, and checks against recorded source evidence. | Updated project notes, a scoped inventory, and stale-evidence status. |
 | [Ponytail Codex](ponytail-codex/README.md) | Applies the smallest complete change, with lite/full/ultra levels, connected-code reviews, repository audits, and shortcut ledgers. | Focused implementation, prioritized findings, or counted `ponytail:` debt. |
+| [Pstack Codex](pstack-codex/README.md) | Adapts Poteto investigation, architecture, implementation, skeptical review, and runtime verification to Codex, with all upstream sources retained. | Evidence-grounded code, explanations, reviews, delivery plans, and optional configured Benny triage. |
 | [Codebase Design](codebase-design/README.md) | Designs deep modules with small interfaces and useful seams. | Interface proposals, design comparisons, and testable restructuring. |
 | [Domain Modeling](domain-modeling/README.md) | Resolves business terminology and records consequential tradeoffs. | A precise `CONTEXT.md` glossary and selective ADRs. |
+
+Pstack Codex preserves all 164 files from pstack 0.15.15, including 27 workflows, 24 principles, 23 playbooks, agent definitions, the full guide, tools, and the optional Benny pack. One Codex entrypoint routes to native guidance and the complete pinned sources. The [package guide](pstack-codex/README.md), [workflow catalog](pstack-codex/references/catalog.md), and [runtime adaptation](pstack-codex/references/codex-runtime.md) explain invocation and capability limits. Original `SKILL.md` filenames are stored as `SKILL.md.source` to keep the source bundle from registering nested Cursor skills.
 
 ### Interface design, construction, and verification
 
@@ -190,6 +193,10 @@ $ponytail-codex fix this bug with the smallest complete change and verify affect
 
 $ponytail-codex review the staged changes for bugs, expected load, and unnecessary code.
 
+$pstack-codex fix this bug: reproduce it, trace the mechanism, and verify the original trigger.
+
+$pstack-codex interrogate this branch and report source-supported correctness findings.
+
 $ui-design audit and fix the named settings-page files, preserving our tokens.
 
 $ui-verification reproduce the focus findings and verify the fixes in the browser.
@@ -227,6 +234,7 @@ There is no single application build or universal test command for this collecti
 | Workflow | Relevant requirement |
 |---|---|
 | Repository mapping | Git and Python 3.9+ for the Repo Context helper. |
+| Pstack Codex integrity and helper checks | Python 3.9+ standard library; Bash for the decision logger. Core workflows use project/native tools. Original Bun/Cursor helpers are retained source implementations; optional Benny needs configured connectors, app control, and explicit action authorization. |
 | Offline founder calculations | Python 3.8+; the finance helper uses the standard library. |
 | Diagram scene rendering and SVG extraction | Python 3.9+ standard library; browser measurement and PNG/PDF export optionally use Playwright plus Chromium. |
 | Recorded motion analysis | ffmpeg; OpenCV, NumPy, and SciPy for tracking and fitting. |
@@ -273,4 +281,4 @@ When adding or changing a package, keep its description precise, preserve user s
 
 Licensing is recorded within individual packages; this repository has no single root license file establishing one license for the entire collection. Some packages retain license texts, some declare terms in frontmatter, and others document sources in the entrypoint. Check relevant material before reuse or redistribution rather than assuming a uniform license.
 
-Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Ponytail Codex retains DietrichGebert's [MIT license](ponytail-codex/LICENSE) and [pinned adaptation notes](ponytail-codex/references/provenance.md); upstream benchmark figures are attributed to their published environment rather than claimed as Codex results. Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
+Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Ponytail Codex retains DietrichGebert's [MIT license](ponytail-codex/LICENSE) and [pinned adaptation notes](ponytail-codex/references/provenance.md); upstream benchmark figures are attributed to their published environment rather than claimed as Codex results. Pstack Codex retains Lauren Tan's [MIT license](pstack-codex/LICENSE) and all 164 upstream files with a [pinned manifest and adaptation notes](pstack-codex/references/provenance.md). Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.
