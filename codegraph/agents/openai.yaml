@@ -1,0 +1,4 @@
+interface:
+  display_name: "CodeGraph"
+  short_description: "Trace code relationships with a local graph"
+  default_prompt: "Use $codegraph to trace this change through callers and identify affected tests in the current repository."

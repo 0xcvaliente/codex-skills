@@ -29,6 +29,12 @@ Never promise a particular token saving, perfect memory, or a complete code grap
 
 ## Check before trusting notes
 
+When the optional `codegraph` skill and a project index are already available,
+use them for parsed callers, dependencies, and change impact. Keep this skill's
+notes and evidence checks authoritative for note maintenance; inspect current
+source when graph results are stale or incomplete. CodeGraph setup is not a
+prerequisite for mapping or maintaining notes.
+
 Use a bounded change summary when starting new work or after a branch switch:
 
 ```sh

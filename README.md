@@ -4,7 +4,7 @@
 
 This repository collects workflows that give an agent task-specific judgment and practical tools: how to navigate a repository, design a module, implement a Figma frame, verify a UI in a browser, tune motion, create explanatory diagrams and 3D assets, review security, work with Payload CMS, support a founder, or package an animated pet.
 
-The collection currently contains **41 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
+The collection currently contains **42 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
 ## What this repository provides
 
@@ -31,12 +31,15 @@ Install the packages relevant to your work. Several skills cover neighboring con
 | Skill | What it does | Typical result |
 |---|---|---|
 | [Repo Context](repo-context/README.md) | Navigates projects with compact notes, filename maps, and checks against recorded source evidence. | Updated project notes, a scoped inventory, and stale-evidence status. |
+| [CodeGraph](codegraph/README.md) | Uses a local parsed source index for cross-file calls, dependencies, and change impact, with Codex MCP setup and CLI fallback. | Focused source/relationship evidence, candidate affected tests, and explicit freshness or coverage limits. |
 | [Ponytail Codex](ponytail-codex/README.md) | Applies the smallest complete change, with lite/full/ultra levels, connected-code reviews, repository audits, and shortcut ledgers. | Focused implementation, prioritized findings, or counted `shortcut:` and legacy `ponytail:` debt. |
 | [Pstack Codex](pstack-codex/README.md) | Adapts Poteto investigation, architecture, implementation, skeptical review, and runtime verification to Codex, with all upstream sources retained. | Evidence-grounded code, explanations, reviews, delivery plans, and optional configured Benny triage. |
 | [Codebase Design](codebase-design/README.md) | Designs deep modules with small interfaces and useful seams. | Interface proposals, design comparisons, and testable restructuring. |
 | [Domain Modeling](domain-modeling/README.md) | Resolves business terminology and records consequential tradeoffs. | A precise `GLOSSARY.md` (or existing `CONTEXT.md`) and selective ADRs. |
 
 Pstack Codex preserves all 164 files from pstack 0.15.15, including 27 workflows, 24 principles, 23 playbooks, agent definitions, the full guide, tools, and the optional Benny pack. One Codex entrypoint routes to native guidance and the complete pinned sources. The [package guide](pstack-codex/README.md), [workflow catalog](pstack-codex/references/catalog.md), and [runtime adaptation](pstack-codex/references/codex-runtime.md) explain invocation and capability limits. Original `SKILL.md` filenames are stored as `SKILL.md.source` to keep the source bundle from registering nested Cursor skills.
+
+CodeGraph complements Repo Context's maintained notes with derived symbol relationships. Its runtime, Codex MCP registration, and per-project index are separate from skill installation. The [setup guide](codegraph/references/setup.md) covers the reviewed 1.6.2 release, telemetry controls, initialization side effects, and hosts with separate MCP catalogs. The [assessment](codegraph/references/assessment.md) records fit and limitations; no upstream token-saving percentage is claimed for Codex.
 
 ### Interface design, construction, and verification
 
@@ -205,6 +208,8 @@ Invoke a skill by name and provide the target, constraints, and desired result:
 ```text
 $repo-context locate the checkout flow and check the relevant architecture notes.
 
+$codegraph trace submitOrder through its callers in this indexed repo and identify affected tests.
+
 $ponytail-codex fix this bug with the smallest complete change and verify affected callers.
 
 $ponytail-codex review the staged changes for bugs, expected load, and unnecessary code.
@@ -259,6 +264,7 @@ There is no single application build or universal test command for this collecti
 | Workflow | Relevant requirement |
 |---|---|
 | Repository mapping | Git and Python 3.9+ for the Repo Context helper. |
+| CodeGraph structural retrieval | CodeGraph CLI or an accessible MCP connection and a selected project index. Reviewed npm runtime: 1.6.2, with a platform bundle; Python 3.9+ for the optional isolated CLI/MCP smoke test. |
 | Pstack Codex integrity and helper checks | Python 3.9+ standard library; Bash for the decision logger. Core workflows use project/native tools. Original Bun/Cursor helpers are retained source implementations; optional Benny needs configured connectors, app control, and explicit action authorization. |
 | Offline founder calculations | Python 3.8+; the finance helper uses the standard library. |
 | Diagram scene rendering and SVG extraction | Python 3.9+ standard library; browser measurement and PNG/PDF export optionally use Playwright plus Chromium. |
@@ -305,8 +311,12 @@ For the Emil collection, compare the pinned revision and `references/source-mani
 
 When adding or changing a package, keep its description precise, preserve user scope, link deeper guidance where relevant, and update its README and this catalog. Add scripts for reliable reusable mechanics. Record only checks actually performed and distinguish missing verification from a pass.
 
+For CodeGraph, review release changes, CLI help, MCP schemas, freshness policy, and installer side effects, then rerun `python3 codegraph/scripts/smoke_test.py --codegraph /absolute/path/to/codegraph`. Update its pinned provenance and verification record with the setup guidance. Runtime upgrades and project indexing remain separate actions.
+
 ## Licensing and provenance
 
 Licensing is recorded within individual packages; this repository has no single root license file establishing one license for the entire collection. Some packages retain license texts, some declare terms in frontmatter, and others document sources in the entrypoint. Check relevant material before reuse or redistribution rather than assuming a uniform license.
+
+CodeGraph includes MIT terms and an [attribution notice](codegraph/NOTICE), with [pinned reviewed source hashes](codegraph/references/provenance.json). Its original Codex integration does not redistribute the CodeGraph runtime.
 
 Founder Codex retains eight source license texts and a [source map with pinned revisions and adaptation notes](founder-codex/references/sources.md). Diagram Craft includes an [MIT license](diagram-craft/LICENSE) for its original implementation and a [provenance note](diagram-craft/references/provenance.md) identifying its inspiration. Strix Codex retains the upstream [Apache-2.0 license](strix-codex/LICENSE), [adaptation notice](strix-codex/NOTICE), and [pinned provenance](strix-codex/references/provenance.md). Ponytail Codex retains DietrichGebert's [MIT license](ponytail-codex/LICENSE) and [pinned adaptation notes](ponytail-codex/references/provenance.md); upstream benchmark figures are attributed to their published environment rather than claimed as Codex results. Pstack Codex retains Lauren Tan's [MIT license](pstack-codex/LICENSE) and all 164 upstream files with a [pinned manifest and adaptation notes](pstack-codex/references/provenance.md). All 14 Emil-derived packages retain Emil Kowalski's [MIT license](emil-design-eng/LICENSE), exact source entrypoints, supporting resources, and per-package [provenance](emil-design-eng/references/provenance.md). Other skills describe inspirations or local adaptations in their documentation. Preserve those notices and verify missing terms when licensing matters. Inclusion does not imply affiliation, endorsement, or a guarantee that a snapshot remains current.

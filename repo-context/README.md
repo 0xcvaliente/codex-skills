@@ -4,6 +4,11 @@
 
 The helper creates filename-based maps and checks recorded evidence for changes. It does not infer imports, runtime architecture, or data flows, and an unchanged evidence record does not prove that a note's claims are correct.
 
+The optional [CodeGraph companion](../codegraph/README.md) supplies parsed callers,
+dependencies, and candidate change impact when its runtime and project index
+are available. Repo Context continues to own maintained notes and evidence
+records. Both packages work independently; neither mandates setting up the other.
+
 ## When to use it
 
 Use it when entering an unfamiliar repository, resuming substantial work, locating related areas for a multi-file change, or maintaining a small project map. Skip the full workflow for a trivial edit whose context is already supplied.
