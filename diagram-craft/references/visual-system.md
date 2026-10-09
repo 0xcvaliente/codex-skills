@@ -29,7 +29,7 @@ Custom SVG can opt into the browser helper's annotations:
 <polyline data-edge="e1" points="320,140 480,140" …/>
 ```
 
-Bounds must describe actual geometry. Untagged elements and curved connector paths require visual review; the helper cannot reliably infer their intention.
+Bounds describe actual geometry in the annotated element’s local coordinate frame. The helper maps supported element/group translations, text bounds, and polyline points into the selected root SVG’s viewBox frame before comparing them. Scaling, rotation, skew, and unavailable transforms produce explicit warnings and skip affected geometry measurements; nested SVG content is excluded. It checks the first meaningful root SVG and warns if more diagrams need review. Untagged elements and curved connector paths require visual review; the helper cannot reliably infer their intention.
 
 ## Accessibility and responsiveness
 

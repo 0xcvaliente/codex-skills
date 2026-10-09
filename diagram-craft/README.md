@@ -99,7 +99,7 @@ node scripts/inspect_diagram.cjs example.html --out-dir checks \
 
 It writes desktop/mobile screenshots and `report.json`, and returns nonzero for detected defects. It measures annotated text containment, viewBox bounds, orthogonal route obstruction, accessible naming, selected contrast pairs, duplicate IDs, page errors, failed requests, and page overflow. Untagged custom geometry needs manual inspection. These checks are not semantic verification or a complete accessibility audit.
 
-PNG captures the first SVG; PDF prints the full HTML companion on A4 landscape and can span pages. Inspect the actual export. [Delivery/import guidance](references/delivery-and-import.md) explains portability, format fidelity, and publication scope.
+PNG captures the first meaningful root SVG (excluding `aria-hidden="true"` decoration); PDF prints the full HTML companion on A4 landscape and can span pages. Inspect the actual export. [Delivery/import guidance](references/delivery-and-import.md) explains portability, format fidelity, and publication scope.
 
 ## Included examples
 
@@ -145,3 +145,12 @@ python3 .system/skill-creator/scripts/quick_validate.py diagram-craft
 The structural validator also needs PyYAML. Keep generated examples synchronized with their scenes and inspect changed visuals. Treat a check's stated limits as part of its result. Keep project-specific brand/evidence records in their project, not the globally installed skill. Installed copies require an intentional update after repository changes.
 
 Original files are licensed under [MIT](LICENSE). Source material supplied by users retains its own terms.
+
+## Maintenance — 2026-10-10
+
+Version 1.1.0 corrects diagram selection when decorative SVG icons precede the
+figure and compares translated nodes, labels, text, and orthogonal routes in
+the root canvas coordinate frame. The inspector reports unsupported transforms
+and additional diagrams as unmeasured work. The optional browser suite covers
+these cases and verifies that PNG export captures the selected diagram. See
+[provenance](references/provenance.md) for the reviewed upstream changes.

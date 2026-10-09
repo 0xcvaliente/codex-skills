@@ -6,6 +6,8 @@ This repository collects workflows that give an agent task-specific judgment and
 
 The collection currently contains **42 regular skills** and **six system skill snapshots**. Every skill directory has a `SKILL.md` entrypoint and a detailed README describing its scope, workflow, requirements, outputs, example requests, and supporting files.
 
+The [2026-10-10 maintenance report](docs/maintenance-2026-10-10.md) documents checks of 51 installed personal/system packages, 28 native plugins, additional host plugins, and 46 repository sources. Applicable upgrades include Diagram Craft 1.1.0, the Strix reviewed baseline, Tunnel MCP 0.1.6, and repairs to three bundled browser skill caches. The [exact inventory](docs/maintenance-2026-10-10.json) records unchanged sources, verification, and remaining runtime prerequisites; the [maintenance procedure](docs/skill-maintenance.md) explains future updates.
+
 ## What this repository provides
 
 A skill packages knowledge the agent can reuse across projects. Its frontmatter describes what the skill does and when it applies; its body contains the working method, constraints, and links to deeper guidance. Some packages are entirely Markdown. Others include deterministic helpers, visual assets, regression tests, or evaluation scenarios.

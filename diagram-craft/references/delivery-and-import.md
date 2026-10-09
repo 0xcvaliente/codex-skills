@@ -37,7 +37,7 @@ node <skill-dir>/scripts/inspect_diagram.cjs diagram.html --out-dir checks \
   --png diagram.png --pdf diagram.pdf --scale 2
 ```
 
-PNG captures the first SVG at the requested device scale, excluding companion text. PDF prints the full companion on A4 landscape, including notes/sources; it may have several pages. Use a separate layout for a one-page figure or other paper size. Inspect delivered exports.
+PNG captures the first meaningful root SVG (excluding `aria-hidden="true"` decoration) at the requested device scale, excluding companion text. PDF prints the full companion on A4 landscape, including notes/sources; it may have several pages. Use a separate layout for a one-page figure or other paper size. Inspect delivered exports.
 
 The helper measures local HTML in Chromium at desktop/mobile widths. It does not install Playwright/browser binaries. Resolve the package through a project installation or the host's bundled `NODE_PATH`; use another browser tool if needed. Install dependencies only within the authorized workflow. Missing tools are a reported limit, not a screenshot claim.
 

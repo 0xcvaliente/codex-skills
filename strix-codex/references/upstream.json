@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "repository": "usestrix/strix",
-  "reviewed_commit": "f5a900416b6e1d8023e7c2ce11885232ffa8b806",
-  "reviewed_tree": "1ee8124cf2d6e9f7d6fcc619ad5f9b3bed391e06",
+  "reviewed_commit": "62b496430da5df5e9e79a190e7af6f92529883a3",
+  "reviewed_tree": "a41270e6597885a5fbe8e800d5a9da9de64e8313",
   "reviewed_default_branch": "main",
-  "reviewed_at": "2026-10-09",
+  "reviewed_at": "2026-10-10",
   "files": {
     ".github/ISSUE_TEMPLATE/bug_report.md": {
       "sha": "85919cefe8ec2acccfbc74c2692b1148b7dc87fd",
@@ -387,7 +387,7 @@
       "type": "blob"
     },
     "strix/agents/factory.py": {
-      "sha": "3b9dd6169a036ae4117ab5885ff529aae3012927",
+      "sha": "4cd9e0378f240eb568d06c593f99711c223adf10",
       "mode": "100644",
       "type": "blob"
     },
@@ -447,17 +447,17 @@
       "type": "blob"
     },
     "strix/core/agents.py": {
-      "sha": "efd7cb607ca3aec3edf3b92ad86b7eda01bf8032",
+      "sha": "7e738be1d25c2913167bfceb42485743efe415a5",
       "mode": "100644",
       "type": "blob"
     },
     "strix/core/execution.py": {
-      "sha": "5997e3dbee32de227f020dba891378d830330ba1",
+      "sha": "87a2bf0295097051aaa3ad9be10532c3e6695717",
       "mode": "100644",
       "type": "blob"
     },
     "strix/core/hooks.py": {
-      "sha": "eae4d7c7fdf4661264d69127d688b4d6327edd54",
+      "sha": "06650be92753f18aec4d5ab36e6f8e2a1f315f41",
       "mode": "100644",
       "type": "blob"
     },
@@ -472,7 +472,7 @@
       "type": "blob"
     },
     "strix/core/runner.py": {
-      "sha": "58124be26038935f9499df4ef98962b5b6cce35a",
+      "sha": "f9bb494044ce0dcf69ff97b87593b73caa4ebb2c",
       "mode": "100644",
       "type": "blob"
     },
@@ -1942,7 +1942,7 @@
       "type": "blob"
     },
     "strix/tools/agents_graph/tools.py": {
-      "sha": "60c88525adf52f3490d8fe19df76a769d9f40f1c",
+      "sha": "a26c1dc443abc303cee797dcf7933d5b543b52ca",
       "mode": "100644",
       "type": "blob"
     },
@@ -2177,7 +2177,7 @@
       "type": "blob"
     },
     "tests/test_agent_tool_registration.py": {
-      "sha": "489fea709712d3cf3d2c371272bd4457ea9c1776",
+      "sha": "e459670b011b3efbe853c63b77e9797c54bac9f3",
       "mode": "100644",
       "type": "blob"
     },
@@ -2337,7 +2337,7 @@
       "type": "blob"
     },
     "tests/test_execution.py": {
-      "sha": "c3e1776d2819ac57c496c5be30d6a92997ca2ec0",
+      "sha": "0daf0da243ad67f435031284672bdbae39535a4f",
       "mode": "100644",
       "type": "blob"
     },
@@ -2367,7 +2367,7 @@
       "type": "blob"
     },
     "tests/test_hooks.py": {
-      "sha": "16fce42681a7f083017b882c2c4d0f818c701f33",
+      "sha": "975a99b8cf23afb2a447c35d4c6d7935cc607d6d",
       "mode": "100644",
       "type": "blob"
     },
@@ -2706,6 +2706,5 @@
       "mode": "100644",
       "type": "blob"
     }
-  },
-  "default_branch": "main"
+  }
 }

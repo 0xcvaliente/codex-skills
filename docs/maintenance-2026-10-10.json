@@ -1,0 +1,2477 @@
+{
+  "schema_version": 2,
+  "reviewed_date": "2026-10-10",
+  "timezone": "Europe/Oslo",
+  "checked_at_utc": "2026-10-09T22:55:24.788952+00:00",
+  "collection_baseline": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+  "scope": {
+    "personal_and_system_packages": 51,
+    "native_registered_plugins": 28,
+    "additional_host_plugins": [
+      "obscura",
+      "tunnel-mcp"
+    ],
+    "duplicate_surface": "Pinterest Inspo is also exposed by the personal-plugin host; it is the same current 0.1.0 skill, not an additional upgrade.",
+    "plugin_skill_entrypoints": 83,
+    "repository_heads_checked": 46
+  },
+  "sources": [
+    {
+      "skill": ".system/imagegen",
+      "origin": "Bundled/customized system snapshot; public OpenAI source checked. Kept current local integration rather than overwriting it with a different public snapshot.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": ".system/openai-docs",
+      "origin": "Bundled/customized system snapshot; public OpenAI source checked. Kept current local integration rather than overwriting it with a different public snapshot.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": ".system/review-agent",
+      "origin": "Bundled/customized system snapshot; public OpenAI source checked. Kept current local integration rather than overwriting it with a different public snapshot.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": ".system/skill-creator",
+      "origin": "Bundled/customized system snapshot; public OpenAI source checked. Kept current local integration rather than overwriting it with a different public snapshot.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": ".system/skill-installer",
+      "origin": "Bundled/customized system snapshot; public OpenAI source checked. Kept current local integration rather than overwriting it with a different public snapshot.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "animate",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "animate-expo",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "animation-vocabulary",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "apple-design",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "ask-sonner",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "break-ui",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "business-sales-documents",
+      "origin": "Original synthesis; linked inspiration reviewed, not an upstream mirror.",
+      "in_collection": false,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "anildash/better-documents",
+          "url": "https://github.com/anildash/better-documents",
+          "previous_observed_revision": "dd8d01d4ebf9045f00a074c5f916a68d0d4f57e4",
+          "latest_observed_revision": "dd8d01d4ebf9045f00a074c5f916a68d0d4f57e4",
+          "status": "same"
+        },
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "previous_observed_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "latest_observed_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "status": "same"
+        },
+        {
+          "repository": "sauewi/industrial-product-brochure",
+          "url": "https://github.com/sauewi/industrial-product-brochure",
+          "previous_observed_revision": "e7ac31dd44a6b9712114acdc0c62e65292d394eb",
+          "latest_observed_revision": "e7ac31dd44a6b9712114acdc0c62e65292d394eb",
+          "status": "same"
+        },
+        {
+          "repository": "anthropics/skills",
+          "url": "https://github.com/anthropics/skills",
+          "previous_observed_revision": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+          "latest_observed_revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "status": "changed"
+        },
+        {
+          "repository": "thatrebeccarae/claude-marketing",
+          "url": "https://github.com/thatrebeccarae/claude-marketing",
+          "previous_observed_revision": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+          "latest_observed_revision": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+          "status": "same"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "codebase-design",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "previous_observed_revision": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+          "latest_observed_revision": "49dd158d1076134a641b33efb035946536778336",
+          "status": "changed"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "codegraph",
+      "origin": "Codex adaptation of CodeGraph",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "colbymchenry/codegraph",
+          "url": "https://github.com/colbymchenry/codegraph",
+          "latest_observed_revision": "b635dd467f0578926a9c01a37b9d28d2b26689f1",
+          "status": "same",
+          "runtime_version": "1.6.2",
+          "latest_npm_version": "1.6.2",
+          "reviewed_release_commit": "6560052a6f856855d3f71eee838fd66ccfa4285d"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "create-3d-assets",
+      "origin": "Original local workflow; personal collection is the maintained source.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "credo-design",
+      "origin": "Local original; bundled assets match Desktop/brand; keep local.",
+      "in_collection": false,
+      "enabled": true,
+      "sources": [],
+      "action": "retained; local original with no external skill upstream identified",
+      "validation": "passed"
+    },
+    {
+      "skill": "diagram-craft",
+      "origin": "Original synthesis; linked inspiration reviewed, not an upstream mirror.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "previous_observed_revision": "f4547ee95f88e5b28a52517feff6b6c11cc657f9",
+          "latest_observed_revision": "75f47bbae5db21d2269a0c5134b22ce342686db4",
+          "status": "changed"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "upgraded to 1.1.0; decorative SVG selection, translated geometry, export target and regression coverage",
+      "validation": "passed"
+    },
+    {
+      "skill": "domain-modeling",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "previous_observed_revision": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+          "latest_observed_revision": "49dd158d1076134a641b33efb035946536778336",
+          "status": "changed"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "emil-design-eng",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "figma",
+      "origin": "OpenAI curated skill; latest source compared, local integration preserved.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "figma-create-design-system-rules",
+      "origin": "OpenAI curated skill; latest source compared, local integration preserved.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "figma-implement-design",
+      "origin": "OpenAI curated skill; latest source compared, local integration preserved.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "find-animation-opportunities",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "founder-codex",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "coreyhaines31/marketingskills",
+          "url": "https://github.com/coreyhaines31/marketingskills",
+          "previous_observed_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "latest_observed_revision": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+          "status": "same"
+        },
+        {
+          "repository": "emotixco/claude-skills-founder",
+          "url": "https://github.com/emotixco/claude-skills-founder",
+          "previous_observed_revision": "0602cad0520e4d8cb165bb1c779d7010cfbc5b45",
+          "latest_observed_revision": "0602cad0520e4d8cb165bb1c779d7010cfbc5b45",
+          "status": "same"
+        },
+        {
+          "repository": "Jakeschincariol/founder-skill",
+          "url": "https://github.com/Jakeschincariol/founder-skill",
+          "previous_observed_revision": "fd9385b0cfe1b96bebce3898fbd506d73eff5a9d",
+          "latest_observed_revision": "fd9385b0cfe1b96bebce3898fbd506d73eff5a9d",
+          "status": "same"
+        },
+        {
+          "repository": "Varnan-Tech/opendirectory",
+          "url": "https://github.com/Varnan-Tech/opendirectory",
+          "previous_observed_revision": "62e437ab13408171805a87d16f5cb0151f96ea3c",
+          "latest_observed_revision": "62e437ab13408171805a87d16f5cb0151f96ea3c",
+          "status": "same"
+        },
+        {
+          "repository": "anthropics/launch-your-agent",
+          "url": "https://github.com/anthropics/launch-your-agent",
+          "previous_observed_revision": "d5d0ffbca3abe857478165a7c48f4cfc39a50920",
+          "latest_observed_revision": "d5d0ffbca3abe857478165a7c48f4cfc39a50920",
+          "status": "same"
+        },
+        {
+          "repository": "getagentseal/founder-playbook",
+          "url": "https://github.com/getagentseal/founder-playbook",
+          "previous_observed_revision": "e811e63be42c9b64a208707220b145451ad4b6c8",
+          "latest_observed_revision": "e811e63be42c9b64a208707220b145451ad4b6c8",
+          "status": "same"
+        },
+        {
+          "repository": "ognjengt/founder-skills",
+          "url": "https://github.com/ognjengt/founder-skills",
+          "previous_observed_revision": "a45931cad934dc6243a68f905485467935a4ad9a",
+          "latest_observed_revision": "a45931cad934dc6243a68f905485467935a4ad9a",
+          "status": "same"
+        },
+        {
+          "repository": "ericosiu/ai-marketing-skills",
+          "url": "https://github.com/ericosiu/ai-marketing-skills",
+          "previous_observed_revision": "8088e1a167804d5615f6e982f62e5b4b6ff8f2f1",
+          "latest_observed_revision": "8088e1a167804d5615f6e982f62e5b4b6ff8f2f1",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "frontend-design",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "anthropics/skills",
+          "url": "https://github.com/anthropics/skills",
+          "previous_observed_revision": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+          "latest_observed_revision": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+          "status": "changed"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "gsap-core",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "greensock/gsap-skills",
+          "url": "https://github.com/greensock/gsap-skills",
+          "previous_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "latest_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "gsap-react",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "greensock/gsap-skills",
+          "url": "https://github.com/greensock/gsap-skills",
+          "previous_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "latest_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "gsap-scrolltrigger",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "greensock/gsap-skills",
+          "url": "https://github.com/greensock/gsap-skills",
+          "previous_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "latest_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "gsap-timeline",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "greensock/gsap-skills",
+          "url": "https://github.com/greensock/gsap-skills",
+          "previous_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "latest_observed_revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "hatch-pet",
+      "origin": "Original local workflow; personal collection is the maintained source.",
+      "in_collection": true,
+      "enabled": false,
+      "sources": [
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "improve-animations",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "mobile-native",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "orbit-macos",
+      "origin": "Local original tied to the user\u2019s Orbit project; no separate upstream skill identified.",
+      "in_collection": false,
+      "enabled": true,
+      "sources": [],
+      "action": "retained; local original with no external skill upstream identified",
+      "validation": "passed"
+    },
+    {
+      "skill": "outlook-email-automation",
+      "origin": "Local original",
+      "in_collection": false,
+      "enabled": true,
+      "sources": [],
+      "action": "retained; local original with no external skill upstream identified",
+      "validation": "passed"
+    },
+    {
+      "skill": "payload",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "payloadcms/skills",
+          "url": "https://github.com/payloadcms/skills",
+          "previous_observed_revision": "832d5bc4258ae784f08cb7f03a3a674d6b2fa5f1",
+          "latest_observed_revision": "832d5bc4258ae784f08cb7f03a3a674d6b2fa5f1",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "pick-ui-library",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "ponytail-codex",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "DietrichGebert/ponytail",
+          "url": "https://github.com/DietrichGebert/ponytail",
+          "previous_observed_revision": "9cc65d03aa2da1db7121b912d03596409ee340b8",
+          "latest_observed_revision": "9cc65d03aa2da1db7121b912d03596409ee340b8",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "prototype",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "pstack-codex",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "previous_observed_revision": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+          "latest_observed_revision": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "repo-context",
+      "origin": "Original local workflow; personal collection is the maintained source.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "review-animations",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "security-best-practices",
+      "origin": "OpenAI curated skill; latest source compared, local integration preserved.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "security-threat-model",
+      "origin": "OpenAI curated skill; latest source compared, local integration preserved.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "openai/skills",
+          "url": "https://github.com/openai/skills",
+          "previous_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "latest_observed_revision": "49f948faa9258a0c61caceaf225e179651397431",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "strix-codex",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "usestrix/strix",
+          "url": "https://github.com/usestrix/strix",
+          "previous_observed_revision": "f5a900416b6e1d8023e7c2ce11885232ffa8b806",
+          "latest_observed_revision": "62b496430da5df5e9e79a190e7af6f92529883a3",
+          "status": "changed"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "updated reviewed provenance and 540-file baseline; corrected NOTICE; native assessment workflow retained",
+      "validation": "passed"
+    },
+    {
+      "skill": "ui-animation",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "mblode/agent-skills",
+          "url": "https://github.com/mblode/agent-skills",
+          "previous_observed_revision": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+          "latest_observed_revision": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "ui-design",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "mblode/agent-skills",
+          "url": "https://github.com/mblode/agent-skills",
+          "previous_observed_revision": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+          "latest_observed_revision": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "ui-verification",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "mblode/agent-skills",
+          "url": "https://github.com/mblode/agent-skills",
+          "previous_observed_revision": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+          "latest_observed_revision": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "vercel-react-best-practices",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "vercel-labs/agent-skills",
+          "url": "https://github.com/vercel-labs/agent-skills",
+          "previous_observed_revision": "063bee94c3f4df8453406c830b0a7df0f2860278",
+          "latest_observed_revision": "063bee94c3f4df8453406c830b0a7df0f2860278",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "web-design-guidelines",
+      "origin": "Selective Codex adaptation; original source compared, local workflow retained.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "vercel-labs/web-interface-guidelines",
+          "url": "https://github.com/vercel-labs/web-interface-guidelines",
+          "previous_observed_revision": "434b7f91364665f2f733b310ec54809bf8f37937",
+          "latest_observed_revision": "434b7f91364665f2f733b310ec54809bf8f37937",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "web-experience-design",
+      "origin": "Original synthesis; linked inspiration reviewed, not an upstream mirror.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+          "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+          "previous_observed_revision": "1a2c459b35f26116fd165b0a0f30597f252749ff",
+          "latest_observed_revision": "50d8a7de0900119855614541f15a1a616691eb33",
+          "status": "changed"
+        },
+        {
+          "repository": "MustBeSimo/web-design-studio",
+          "url": "https://github.com/MustBeSimo/web-design-studio",
+          "previous_observed_revision": "c8b99b171c7c1f8c5ebb9fb6962d26769f015ab5",
+          "latest_observed_revision": "c8b99b171c7c1f8c5ebb9fb6962d26769f015ab5",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    },
+    {
+      "skill": "write-swift",
+      "origin": "Codex adaptation; original package and SHA-256 manifest retained, current.",
+      "in_collection": true,
+      "enabled": true,
+      "sources": [
+        {
+          "repository": "emilkowalski/skills",
+          "url": "https://github.com/emilkowalski/skills",
+          "previous_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "latest_observed_revision": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+          "status": "same"
+        },
+        {
+          "repository": "0xcvaliente/codex-skills",
+          "url": "https://github.com/0xcvaliente/codex-skills",
+          "previous_observed_revision": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+          "latest_observed_revision": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+          "status": "changed"
+        }
+      ],
+      "action": "retained; source current or relevant source paths unchanged",
+      "validation": "passed"
+    }
+  ],
+  "repository_heads": [
+    {
+      "repository": "0xcvaliente/codex-skills",
+      "baseline": "df42037fc2bdbfbb2cc719c7ed105464a507b8e7",
+      "latest": "32fc3a12db4e6863f5d68b1f72c5303f7e981b6c",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/0xcvaliente/codex-skills",
+      "review_note": "Collection advanced through the already-installed CodeGraph addition. Compared installed package hashes against the pre-maintenance collection head; preserved local-only packages."
+    },
+    {
+      "repository": "DietrichGebert/ponytail",
+      "baseline": "9cc65d03aa2da1db7121b912d03596409ee340b8",
+      "latest": "9cc65d03aa2da1db7121b912d03596409ee340b8",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "Jakeschincariol/founder-skill",
+      "baseline": "fd9385b0cfe1b96bebce3898fbd506d73eff5a9d",
+      "latest": "fd9385b0cfe1b96bebce3898fbd506d73eff5a9d",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/Jakeschincariol/founder-skill",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "KhronosGroup/glTF-Validator",
+      "baseline": "602c54043ba66856b2e68c40fdf2bced975cdb8a",
+      "latest": "602c54043ba66856b2e68c40fdf2bced975cdb8a",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/KhronosGroup/glTF-Validator",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "MustBeSimo/web-design-studio",
+      "baseline": "c8b99b171c7c1f8c5ebb9fb6962d26769f015ab5",
+      "latest": "c8b99b171c7c1f8c5ebb9fb6962d26769f015ab5",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/MustBeSimo/web-design-studio",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "Varnan-Tech/opendirectory",
+      "baseline": "62e437ab13408171805a87d16f5cb0151f96ea3c",
+      "latest": "62e437ab13408171805a87d16f5cb0151f96ea3c",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/Varnan-Tech/opendirectory",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "ahujasid/mcp-for-blender",
+      "baseline": "7a0373ec9199183cb460068c4f96aed9c579fb4f",
+      "latest": "7a0373ec9199183cb460068c4f96aed9c579fb4f",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/ahujasid/mcp-for-blender",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "anildash/better-documents",
+      "baseline": "dd8d01d4ebf9045f00a074c5f916a68d0d4f57e4",
+      "latest": "dd8d01d4ebf9045f00a074c5f916a68d0d4f57e4",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/anildash/better-documents",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "anthropics/launch-your-agent",
+      "baseline": "d5d0ffbca3abe857478165a7c48f4cfc39a50920",
+      "latest": "d5d0ffbca3abe857478165a7c48f4cfc39a50920",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/anthropics/launch-your-agent",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "anthropics/skills",
+      "baseline": "683bc88e56f3e09ba94f7055977f3d3aa499f202",
+      "latest": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/anthropics/skills",
+      "review_note": "54 changed files concern Claude API guidance and managed-agent workflows. Installed frontend-design and the business-document inspiration folders did not change."
+    },
+    {
+      "repository": "benjitaylor/liveline",
+      "baseline": "069899598a11e00094ea1eb6b838404825f828be",
+      "latest": "069899598a11e00094ea1eb6b838404825f828be",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/benjitaylor/liveline",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "bvaughn/react-error-boundary",
+      "baseline": "1f1387e47c8dc3eb4431c0704fb336438ec2a997",
+      "latest": "1f1387e47c8dc3eb4431c0704fb336438ec2a997",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/bvaughn/react-error-boundary",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "cathrynlavery/diagram-design",
+      "baseline": "f4547ee95f88e5b28a52517feff6b6c11cc657f9",
+      "latest": "75f47bbae5db21d2269a0c5134b22ce342686db4",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/cathrynlavery/diagram-design",
+      "review_note": "12 changed files include translated geometry and decorative SVG naming fixes. Independently incorporated the relevant behavior in diagram-craft 1.1.0."
+    },
+    {
+      "repository": "colbymchenry/codegraph",
+      "baseline": "b635dd467f0578926a9c01a37b9d28d2b26689f1",
+      "latest": "b635dd467f0578926a9c01a37b9d28d2b26689f1",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "baseline": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+      "latest": "1efedbc5148b54b2f0f6c6c9fe0be62e151c7fff",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/coreyhaines31/marketingskills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "csstools/stylelint-use-logical",
+      "baseline": "c3035f41e02672e2d3c111c0d3760a33f9934efc",
+      "latest": "c3035f41e02672e2d3c111c0d3760a33f9934efc",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/csstools/stylelint-use-logical",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "cure53/DOMPurify",
+      "baseline": "18f8f0e3d8efe7e3c8d3d2679aebd0df72164ead",
+      "latest": "8ab84a3d0bedb38e5e6d44279f0a5f41e465e412",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/cure53/DOMPurify",
+      "review_note": "Supporting library head advanced. This is a reference-library observation, not a skill-source or installed project dependency upgrade."
+    },
+    {
+      "repository": "cursor/plugins",
+      "baseline": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "latest": "ccb5507cec1546dc88135c1139c811e6c59115ba",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/cursor/plugins",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "emilkowalski/skills",
+      "baseline": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "latest": "e8a175de22ae1e49370fc144c1f3bb9aeedf988d",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/emilkowalski/skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "emotixco/claude-skills-founder",
+      "baseline": "0602cad0520e4d8cb165bb1c779d7010cfbc5b45",
+      "latest": "0602cad0520e4d8cb165bb1c779d7010cfbc5b45",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/emotixco/claude-skills-founder",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "ericosiu/ai-marketing-skills",
+      "baseline": "8088e1a167804d5615f6e982f62e5b4b6ff8f2f1",
+      "latest": "8088e1a167804d5615f6e982f62e5b4b6ff8f2f1",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/ericosiu/ai-marketing-skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "focus-trap/focus-trap-react",
+      "baseline": "76856f2c7e73948948f81e7956142199ae865974",
+      "latest": "76856f2c7e73948948f81e7956142199ae865974",
+      "default_ref": "refs/heads/master",
+      "status": "same",
+      "url": "https://github.com/focus-trap/focus-trap-react",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "getagentseal/founder-playbook",
+      "baseline": "e811e63be42c9b64a208707220b145451ad4b6c8",
+      "latest": "e811e63be42c9b64a208707220b145451ad4b6c8",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/getagentseal/founder-playbook",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "greensock/gsap-skills",
+      "baseline": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "latest": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/greensock/gsap-skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "jquery/jquery",
+      "baseline": "c2f27864e4ffc2d1409c289fcb9a42b6165dfeaf",
+      "latest": "c2f27864e4ffc2d1409c289fcb9a42b6165dfeaf",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/jquery/jquery",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "lukeed/clsx",
+      "baseline": "925494cf31bcd97d3337aacd34e659e80cae7fe2",
+      "latest": "925494cf31bcd97d3337aacd34e659e80cae7fe2",
+      "default_ref": "refs/heads/master",
+      "status": "same",
+      "url": "https://github.com/lukeed/clsx",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "mattpocock/skills",
+      "baseline": "b0618bc436ad893b3c5e84e55fba86586d34a404",
+      "latest": "49dd158d1076134a641b33efb035946536778336",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/mattpocock/skills",
+      "review_note": "Three files changed in the wizard template, changeset and out-of-scope example. Installed codebase-design/domain-modeling source material did not change."
+    },
+    {
+      "repository": "mblode/agent-skills",
+      "baseline": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+      "latest": "5a781a88ed60c1033767b6b6a966887cd93dd912",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/mblode/agent-skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "microsoft/TRELLIS.2",
+      "baseline": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+      "latest": "75fbf0183001ed9876c8dbb35de6b68552ee08bd",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/microsoft/TRELLIS.2",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "baseline": "1a2c459b35f26116fd165b0a0f30597f252749ff",
+      "latest": "50d8a7de0900119855614541f15a1a616691eb33",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill",
+      "review_note": "Ten files add Amazon Q installer support. Codex guidance and the relevant design data did not change."
+    },
+    {
+      "repository": "ognjengt/founder-skills",
+      "baseline": "a45931cad934dc6243a68f905485467935a4ad9a",
+      "latest": "a45931cad934dc6243a68f905485467935a4ad9a",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/ognjengt/founder-skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "openai/plugins",
+      "baseline": null,
+      "latest": "0722921d5542fc593105c27bd52630babd8b8c2a",
+      "default_ref": "refs/heads/main",
+      "status": "no_baseline",
+      "url": "https://github.com/openai/plugins",
+      "review_note": "Public repository observed as supplementary provenance. Authenticated marketplace and host packages are authoritative for installed managed plugins; public snapshots were not substituted."
+    },
+    {
+      "repository": "openai/skills",
+      "baseline": "49f948faa9258a0c61caceaf225e179651397431",
+      "latest": "49f948faa9258a0c61caceaf225e179651397431",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/openai/skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "pacocoursey/next-themes",
+      "baseline": "a7eeabc39cfb37d74ea3d82eac674d0e1851b1cb",
+      "latest": "a7eeabc39cfb37d74ea3d82eac674d0e1851b1cb",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/pacocoursey/next-themes",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "payloadcms/skills",
+      "baseline": "832d5bc4258ae784f08cb7f03a3a674d6b2fa5f1",
+      "latest": "832d5bc4258ae784f08cb7f03a3a674d6b2fa5f1",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/payloadcms/skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "pmndrs/leva",
+      "baseline": "402a1e9d0899e6d384993aaffe8dc0d2c39110e1",
+      "latest": "402a1e9d0899e6d384993aaffe8dc0d2c39110e1",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/pmndrs/leva",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "sauewi/industrial-product-brochure",
+      "baseline": "e7ac31dd44a6b9712114acdc0c62e65292d394eb",
+      "latest": "e7ac31dd44a6b9712114acdc0c62e65292d394eb",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/sauewi/industrial-product-brochure",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "shadcn-ui/cn",
+      "baseline": "c71bd53a351d99dca12f0808ea7e1c7134ec4945",
+      "latest": "c71bd53a351d99dca12f0808ea7e1c7134ec4945",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/shadcn-ui/cn",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "thatrebeccarae/claude-marketing",
+      "baseline": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "latest": "a8a63ec1341f05ec9c1e9cb52b4edeb14e3bdcba",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/thatrebeccarae/claude-marketing",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "usestrix/strix",
+      "baseline": "f5a900416b6e1d8023e7c2ce11885232ffa8b806",
+      "latest": "62b496430da5df5e9e79a190e7af6f92529883a3",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/usestrix/strix",
+      "review_note": "Nine runtime/test files generalize the root finish tool while retaining finish_scan as the default. Consumer skills, specialist packs and license files did not change. Advanced the reviewed complete baseline to 540 files and corrected NOTICE."
+    },
+    {
+      "repository": "vercel-labs/agent-skills",
+      "baseline": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "latest": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/vercel-labs/agent-skills",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "vercel-labs/web-interface-guidelines",
+      "baseline": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "latest": "434b7f91364665f2f733b310ec54809bf8f37937",
+      "default_ref": "refs/heads/main",
+      "status": "same",
+      "url": "https://github.com/vercel-labs/web-interface-guidelines",
+      "review_note": "Default-branch head equals the recorded baseline; installed adaptation retained."
+    },
+    {
+      "repository": "vercel/next.js",
+      "baseline": "619d36f519f50d499df099c0a6c86a3bd586b742",
+      "latest": "1e1f9e691109dd422dd04aa42d93e52aafdfc6b8",
+      "default_ref": "refs/heads/canary",
+      "status": "changed",
+      "url": "https://github.com/vercel/next.js",
+      "review_note": "Supporting library head advanced. Project version/API verification remains required when a skill is used; no project dependency was changed."
+    },
+    {
+      "repository": "vercel/satori",
+      "baseline": "cc3119fa2961cd8976e13940eda4de9b8bd2d991",
+      "latest": "e4418321e5cf6fbcc5cbe8c9eadd2e110cce368f",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/vercel/satori",
+      "review_note": "Supporting library head advanced. No installed skill source bundle embeds or requires an upgrade of this library."
+    },
+    {
+      "repository": "h4ckf0r0day/obscura",
+      "baseline": "66c4545a0c7dd0ff744e7a73832be7862d673188",
+      "latest": "1f8eb76437f4da4ac7ccb301986e71059e3ea497",
+      "default_ref": "refs/heads/main",
+      "status": "changed",
+      "url": "https://github.com/h4ckf0r0day/obscura",
+      "review_note": "13 engine/rendering and regression files changed; CLI/MCP surfaces and license unchanged. Owned plugin 0.1.0 skill files match its current release; engine updates are separate."
+    },
+    {
+      "repository": "openai/tunnel-client",
+      "baseline": null,
+      "latest": "b91e6c992dfd33e5c5ea94b00449c527c110851e",
+      "default_ref": "refs/heads/master",
+      "status": "no_baseline",
+      "url": "https://github.com/openai/tunnel-client",
+      "review_note": "Upgraded the existing debug plugin bundle from 0.1.4 to 0.1.6. New guidance documents conditional component-health URLs and managed process supervision. MCP server implementation is unchanged; 69 tests pass. Engine binary was already absent."
+    }
+  ],
+  "plugins": [
+    {
+      "plugin": "pinterest-inspo@valiente-personal",
+      "version": "0.1.0",
+      "enabled": true,
+      "source": "personal local source",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "documents@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "pdf@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "spreadsheets@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "presentations@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "template-creator@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "codex-app-tools@openai-bundled",
+      "version": "0.1.5",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "browser@openai-bundled",
+      "version": "26.1002.52244",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "repaired missing browser entrypoints through native plugin add"
+    },
+    {
+      "plugin": "unified-computer-use@openai-bundled",
+      "version": "26.1002.52244",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "chrome@openai-bundled",
+      "version": "26.1002.52244",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "repaired missing browser entrypoints through native plugin add"
+    },
+    {
+      "plugin": "computer-use@openai-bundled",
+      "version": "1.0.1001394",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "repaired missing browser entrypoints through native plugin add"
+    },
+    {
+      "plugin": "code-review@openai-bundled",
+      "version": "26.1002.52244",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "visualize@openai-bundled",
+      "version": "1.0.47",
+      "enabled": true,
+      "source": "host-managed source package",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "codex-office@codex-office-local",
+      "version": "0.1.5",
+      "enabled": true,
+      "source": "personal local source",
+      "action": "verified current source skill files; retained"
+    },
+    {
+      "plugin": "notion@openai-curated-remote",
+      "version": "3.0.0",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "github@openai-curated-remote",
+      "version": "0.1.12-5f7cd798dc99",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "outlook-email@openai-curated-remote",
+      "version": "0.1.8",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "google-drive@openai-curated-remote",
+      "version": "0.1.20",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "plugin-creator@openai-curated-remote",
+      "version": "0.1.23",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "google-calendar@openai-curated-remote",
+      "version": "1.2.7",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "canva@openai-curated-remote",
+      "version": "17.0.1",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "pages@openai-curated-remote",
+      "version": "0.1.21",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "sites@openai-curated-remote",
+      "version": "1.0.1",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "retained 1.0.1 after host restored a transient stale 1.0.0 CLI artifact; manifest verified and recovered copy backed up"
+    },
+    {
+      "plugin": "plugin-management@openai-curated-remote",
+      "version": "0.1.0",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    },
+    {
+      "plugin": "work-pets@openai-curated-remote",
+      "version": "0.1.6",
+      "enabled": true,
+      "source": "authenticated remote marketplace",
+      "action": "refreshed from authenticated native marketplace; installed version current"
+    }
+  ],
+  "host_plugins": [
+    {
+      "plugin": "obscura",
+      "version": "0.1.0",
+      "action": "verified selected current-release files byte-for-byte against the owned backend release; retained"
+    },
+    {
+      "plugin": "tunnel-mcp@debug",
+      "previous_version": "0.1.4",
+      "version": "0.1.6",
+      "action": "staged source installer and synchronized the reviewed public bundle into the existing cache; configuration and runtime state preserved"
+    }
+  ],
+  "plugin_skills": [
+    {
+      "plugin": "pinterest-inspo@valiente-personal",
+      "version": "0.1.0",
+      "path": "skills/find-inspiration/SKILL.md",
+      "name": "find-inspiration",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "documents@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "path": "skills/documents/SKILL.md",
+      "name": "documents",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "pdf@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "path": "skills/pdf/SKILL.md",
+      "name": "pdf",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "spreadsheets@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "path": "skills/excel-live-control/SKILL.md",
+      "name": "excel-live-control",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "spreadsheets@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "path": "skills/spreadsheets/SKILL.md",
+      "name": "Spreadsheets",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "presentations@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "path": "skills/presentations/SKILL.md",
+      "name": "Presentations",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "template-creator@openai-primary-runtime",
+      "version": "26.1007.11041",
+      "path": "skills/template-creator/SKILL.md",
+      "name": "template-creator",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "browser@openai-bundled",
+      "version": "26.1002.52244",
+      "path": "skills/control-in-app-browser/SKILL.md",
+      "name": "control-in-app-browser",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "chrome@openai-bundled",
+      "version": "26.1002.52244",
+      "path": "skills/control-chrome/SKILL.md",
+      "name": "control-chrome",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "computer-use@openai-bundled",
+      "version": "1.0.1001394",
+      "path": "skills/computer-use/SKILL.md",
+      "name": "computer-use",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "visualize@openai-bundled",
+      "version": "1.0.47",
+      "path": "skills/visualize/SKILL.md",
+      "name": "visualize",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "codex-office@codex-office-local",
+      "version": "0.1.5",
+      "path": "skills/office/SKILL.md",
+      "name": "office",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ad-multiplier/SKILL.md",
+      "name": "ad-multiplier",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ai-host-video/SKILL.md",
+      "name": "ai-host-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/faceless-video/SKILL.md",
+      "name": "faceless-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/higgsfield/SKILL.md",
+      "name": "higgsfield",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/motion-craft/SKILL.md",
+      "name": "motion-craft",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/narrator/SKILL.md",
+      "name": "narrator",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/subtitles/SKILL.md",
+      "name": "subtitles",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/thumbnail-generation/SKILL.md",
+      "name": "thumbnail-generation",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ugc-product-video/SKILL.md",
+      "name": "ugc-product-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ugc-review-video/SKILL.md",
+      "name": "ugc-review-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ugc-try-on-video/SKILL.md",
+      "name": "ugc-try-on-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ugc-tutorial-video/SKILL.md",
+      "name": "ugc-tutorial-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ugc-unboxing-video/SKILL.md",
+      "name": "ugc-unboxing-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/ugc-website-video/SKILL.md",
+      "name": "ugc-website-video",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/video-editing/SKILL.md",
+      "name": "video-editing",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/website-builder/SKILL.md",
+      "name": "website-builder",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "app-6a3293e129088191abf0875820e839da@openai-curated-remote",
+      "version": "2.1.0",
+      "path": "skills/youtube-script/SKILL.md",
+      "name": "youtube-script",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "google-drive@openai-curated-remote",
+      "version": "0.1.20",
+      "path": "skills/google-docs/SKILL.md",
+      "name": "google-docs",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "google-drive@openai-curated-remote",
+      "version": "0.1.20",
+      "path": "skills/google-drive/SKILL.md",
+      "name": "google-drive",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "google-drive@openai-curated-remote",
+      "version": "0.1.20",
+      "path": "skills/google-drive-comments/SKILL.md",
+      "name": "google-drive-comments",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "google-drive@openai-curated-remote",
+      "version": "0.1.20",
+      "path": "skills/google-sheets/SKILL.md",
+      "name": "google-sheets",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "google-drive@openai-curated-remote",
+      "version": "0.1.20",
+      "path": "skills/google-slides/SKILL.md",
+      "name": "google-slides",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "plugin-creator@openai-curated-remote",
+      "version": "0.1.23",
+      "path": "skills/create-plugin/SKILL.md",
+      "name": "create-plugin",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "plugin-creator@openai-curated-remote",
+      "version": "0.1.23",
+      "path": "skills/create-plugin/assets/starter-plugin/skills/starter-workflow/SKILL.md",
+      "name": "starter-workflow",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "plugin-creator@openai-curated-remote",
+      "version": "0.1.23",
+      "path": "skills/prepare-plugin-submission/SKILL.md",
+      "name": "prepare-plugin-submission",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "plugin-creator@openai-curated-remote",
+      "version": "0.1.23",
+      "path": "skills/update-plugin/SKILL.md",
+      "name": "update-plugin",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-code-connect/SKILL.md",
+      "name": "figma-code-connect",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-create-new-file/SKILL.md",
+      "name": "figma-create-new-file",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-design-to-code/SKILL.md",
+      "name": "figma-design-to-code",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-generate-design/SKILL.md",
+      "name": "figma-generate-design",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-generate-diagram/SKILL.md",
+      "name": "figma-generate-diagram",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-generate-library/SKILL.md",
+      "name": "figma-generate-library",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-generative-plugins/SKILL.md",
+      "name": "figma-generative-plugins",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-implement-motion/SKILL.md",
+      "name": "figma-implement-motion",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-shaders/SKILL.md",
+      "name": "figma-shaders",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-swiftui/SKILL.md",
+      "name": "figma-swiftui",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-use/SKILL.md",
+      "name": "figma-use",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-use-figjam/SKILL.md",
+      "name": "figma-use-figjam",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-use-motion/SKILL.md",
+      "name": "figma-use-motion",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "figma@openai-curated-remote",
+      "version": "15.0.0",
+      "path": "skills/figma-use-slides/SKILL.md",
+      "name": "figma-use-slides",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-analytics-dashboard/SKILL.md",
+      "name": "artifact-template-analytics-dashboard",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-business-review/SKILL.md",
+      "name": "artifact-template-business-review",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-design-report/SKILL.md",
+      "name": "artifact-template-design-report",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-experiment-analysis/SKILL.md",
+      "name": "artifact-template-experiment-analysis",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-financial-budget/SKILL.md",
+      "name": "artifact-template-financial-budget",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-investment-committee-memo/SKILL.md",
+      "name": "artifact-template-investment-committee-memo",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-legal-memorandum/SKILL.md",
+      "name": "artifact-template-legal-memorandum",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-market-trends-report/SKILL.md",
+      "name": "artifact-template-market-trends-report",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-minimal-letterhead/SKILL.md",
+      "name": "artifact-template-minimal-letterhead",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-operating-calendar/SKILL.md",
+      "name": "artifact-template-operating-calendar",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-operating-review/SKILL.md",
+      "name": "artifact-template-operating-review",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-project-kickoff/SKILL.md",
+      "name": "artifact-template-project-kickoff",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-project-tracker/SKILL.md",
+      "name": "artifact-template-project-tracker",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-sales-pipeline/SKILL.md",
+      "name": "artifact-template-sales-pipeline",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-simple-dark-mode/SKILL.md",
+      "name": "artifact-template-simple-dark-mode",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-simple-light-mode/SKILL.md",
+      "name": "artifact-template-simple-light-mode",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-strategy-memorandum/SKILL.md",
+      "name": "artifact-template-strategy-memorandum",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-system-design/SKILL.md",
+      "name": "artifact-template-system-design",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-team-alignment/SKILL.md",
+      "name": "artifact-template-team-alignment",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "openai-templates@openai-curated-remote",
+      "version": "0.1.1",
+      "path": "skills/artifact-template-three-statement-forecast/SKILL.md",
+      "name": "artifact-template-three-statement-forecast",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "pages@openai-curated-remote",
+      "version": "0.1.21",
+      "path": "skills/maintain-space/SKILL.md",
+      "name": "maintain-space",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "pages@openai-curated-remote",
+      "version": "0.1.21",
+      "path": "skills/manage-schedules/SKILL.md",
+      "name": "manage-schedules",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "pages@openai-curated-remote",
+      "version": "0.1.21",
+      "path": "skills/organize-space/SKILL.md",
+      "name": "organize-space",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "pages@openai-curated-remote",
+      "version": "0.1.21",
+      "path": "skills/write-page/SKILL.md",
+      "name": "write-page",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "sites@openai-curated-remote",
+      "version": "1.0.1",
+      "path": "skills/sites/SKILL.md",
+      "name": "sites",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "plugin-management@openai-curated-remote",
+      "version": "0.1.0",
+      "path": "skills/plugin-management/SKILL.md",
+      "name": "plugin-management",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "work-pets@openai-curated-remote",
+      "version": "0.1.6",
+      "path": "skills/create-pet/SKILL.md",
+      "name": "create-pet",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "work-pets@openai-curated-remote",
+      "version": "0.1.6",
+      "path": "skills/pets/SKILL.md",
+      "name": "pets",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "work-pets@openai-curated-remote",
+      "version": "0.1.6",
+      "path": "skills/update-pet/SKILL.md",
+      "name": "update-pet",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "obscura",
+      "version": "0.1.0",
+      "path": "skills/obscura/SKILL.md",
+      "name": "obscura",
+      "frontmatter_ok": true
+    },
+    {
+      "plugin": "tunnel-mcp",
+      "version": "0.1.6",
+      "path": "skills/tunnel-mcp/SKILL.md",
+      "name": "tunnel-mcp",
+      "frontmatter_ok": true
+    }
+  ],
+  "changed_collection_files": [
+    "diagram-craft/README.md",
+    "diagram-craft/SKILL.md",
+    "diagram-craft/references/delivery-and-import.md",
+    "diagram-craft/references/provenance.md",
+    "diagram-craft/references/visual-system.md",
+    "diagram-craft/scripts/inspect_diagram.cjs",
+    "diagram-craft/tests/test_browser.cjs",
+    "strix-codex/NOTICE",
+    "strix-codex/README.md",
+    "strix-codex/references/provenance.md",
+    "strix-codex/references/upstream.json"
+  ],
+  "validation": {
+    "personal_and_system_structural": "51/51 passed",
+    "plugin_frontmatter": "83/83 entrypoints parsed with name and description",
+    "entrypoint_relative_links": {
+      "checked": 202,
+      "missing": 0,
+      "excluded": "Two illustrative Markdown links inside skill-creator code examples"
+    },
+    "pinned_source_integrity": {
+      "packages": 15,
+      "files": 187,
+      "mismatches": 0
+    },
+    "diagram_python_tests": "13 passed",
+    "diagram_browser_cases": "9 passed using the documented optional Playwright workflow and existing cached Chromium",
+    "strix_checker_tests": "17 passed",
+    "strix_live_status": "current",
+    "tunnel_mcp_tests": "69 passed",
+    "tunnel_help": "passed",
+    "tunnel_self_check": "engine prerequisite unavailable; existing binary hint referred to a removed Homebrew installation",
+    "local_plugin_source_entrypoints": "14 local packages match after repairs",
+    "native_enablement": "All 28 states preserved",
+    "codex_configuration": "byte-identical before and after",
+    "hatch_pet": "disabled state preserved",
+    "collection_install_sync": "11 changed files byte-identical to installed copies"
+  },
+  "limitations": [
+    "Source-head checks and targeted diffs establish freshness, not a full audit of every upstream repository.",
+    "Managed plugin instructions were refreshed or compared to their owning package; connected API actions and every skill workflow were not exercised.",
+    "Tunnel MCP guidance is upgraded, but its pre-existing missing tunnel-client binary prevents live tunnel operations.",
+    "DOMPurify, Next.js, Satori and Obscura engine changes were observed separately; project/runtime dependencies were not automatically upgraded.",
+    "Four local-only original/synthesis skills were documented in this inventory without publishing private configuration or brand assets."
+  ],
+  "backups": {
+    "personal_skills": "Local skill-maintenance archive created before edits",
+    "tunnel_mcp": "Existing 0.1.4 plugin bundle backed up before replacement",
+    "sites": "Recovered 1.0.1 package backed up after host restoration",
+    "configuration": "Private pre-maintenance snapshot retained locally; omitted from publication"
+  }
+}

@@ -1,12 +1,12 @@
 # Sources and adaptation boundaries
 
-Reviewed for this adaptation: **2026-10-09**.
+Reviewed for this adaptation: **2026-10-10**.
 
-Primary source: [usestrix/strix](https://github.com/usestrix/strix), revision [`f5a900416b6e1d8023e7c2ce11885232ffa8b806`](https://github.com/usestrix/strix/tree/f5a900416b6e1d8023e7c2ce11885232ffa8b806). The machine-readable [baseline](upstream.json) records that commit, its tree, and a complete file inventory for update detection. The review focused on the sources below; the inventory is not a full source audit.
+Primary source: [usestrix/strix](https://github.com/usestrix/strix), revision [`62b496430da5df5e9e79a190e7af6f92529883a3`](https://github.com/usestrix/strix/tree/62b496430da5df5e9e79a190e7af6f92529883a3). The machine-readable [baseline](upstream.json) records that commit, its tree, and a complete file inventory for update detection. The review focused on the sources below; the inventory is not a full source audit.
 
 | Upstream source at the reviewed revision | Adapted purpose |
 |---|---|
-| [`AGENTS.md`](https://github.com/usestrix/strix/blob/f5a900416b6e1d8023e7c2ce11885232ffa8b806/AGENTS.md), `README.md` | Consumer workflow map, local/cloud differences, artifact and exit-code semantics |
+| [`AGENTS.md`](https://github.com/usestrix/strix/blob/62b496430da5df5e9e79a190e7af6f92529883a3/AGENTS.md), `README.md` | Consumer workflow map, local/cloud differences, artifact and exit-code semantics |
 | `skills/application-security-testing`, `find-security-vulnerabilities-in-code`, `web-app-penetration-testing`, `api-security-testing`, `owasp-top-10-testing` | Asset selection, source/runtime correlation, scoped testing, auth/tenant cases, category coverage |
 | `skills/penetration-testing-with-strix`, `managed-pentesting-with-strix`, `ci-security-scanning-with-strix`, `fix-security-vulnerabilities-with-strix` | Optional headless/managed integration, verified upload digest, budget/completion caveats, fix and retest loop |
 | `strix/agents/prompts/system_prompt.jinja`, `strix/skills/coordination/source_aware_whitebox.md` | Mapping, hypotheses, static triage feeding dynamic testing; native Codex execution replaces the source runtime |
@@ -30,3 +30,15 @@ cases. Added connection-evidence and optional-engine diagnostic guidance. The
 engine implementation and retry policy remain upstream runtime behavior, not
 code or unconditional retry instructions installed in Codex. Consumer workflow
 APIs and license notices did not change.
+
+## Reviewed update — 2026-10-10
+
+Reviewed all nine changed files since `f5a900416b6e1d8023e7c2ce11885232ffa8b806`,
+including root tool registration, coordinator state, budget notices, runner
+configuration, lifecycle errors, and their regression cases. Strix now allows
+a caller-selected root finish tool while preserving `finish_scan` as its default.
+This changes the optional engine's lifecycle; it does not add a native Codex
+tool or change the installed assessment workflow. Consumer skills, specialist
+knowledge packs, and license files are unchanged. Advanced the complete
+file-inventory baseline after this review and corrected the stale revision in
+NOTICE.

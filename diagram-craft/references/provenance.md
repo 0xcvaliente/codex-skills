@@ -17,3 +17,16 @@ Reviewed upstream export/import guidance changes through
 Added independent SVG/XML, ID/reference, font-dependency, and state-import
 verification guidance. No upstream scripts, fonts, chart families, or parser
 capabilities were copied or claimed for this original renderer.
+
+## Inspiration review — 2026-10-10
+
+Reviewed the 12 changed upstream files through
+[`75f47bbae5db21d2269a0c5134b22ce342686db4`](https://github.com/cathrynlavery/diagram-design/tree/75f47bbae5db21d2269a0c5134b22ce342686db4).
+The geometry and motion checks now account for translated elements and exempt
+decorative SVG icons from diagram naming requirements. Independently upgraded
+this package's browser helper to select the first meaningful root SVG for
+checks and PNG capture, normalize supported translations into one canvas frame,
+and warn about unsupported transforms. Added browser regressions for valid
+translated diagrams, route obstruction, off-canvas nodes, decorative-only pages,
+unsupported transforms, and PNG target selection. No upstream scripts or
+instruction text were copied.

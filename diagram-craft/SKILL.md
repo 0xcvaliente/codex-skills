@@ -3,7 +3,7 @@ name: diagram-craft
 description: Create, redraw, or refine explanatory diagrams from source material or code, including architecture, flows, sequences, states, and data relationships. Use for polished editable SVG/HTML diagrams and diagram reviews; use a chart workflow for quantitative plots and an image workflow for illustrations.
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Diagram Craft
